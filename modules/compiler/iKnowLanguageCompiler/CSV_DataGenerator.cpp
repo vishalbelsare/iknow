@@ -74,6 +74,12 @@ iknow::base::String CSV_DataGenerator::GetSpecialLabel(SpecialLabel label) {
 	case SentenceEndLabel:
 		return IkStringEncoding::UTF8ToBase("SEnd");
 		break;
+	case QuestionBeginLabel:
+		return IkStringEncoding::UTF8ToBase("QBegin");
+		break;
+	case QuestionEndLabel:
+		return IkStringEncoding::UTF8ToBase("QEnd");
+		break;
 	case JoinLabel:
 		return IkStringEncoding::UTF8ToBase("Join");
 		break;
@@ -267,6 +273,13 @@ void CSV_DataGenerator::writeIRISlexreps(string lexreps_file)
 		os << "\xEF\xBB\xBF"; // Force utf8 header, maybe utf8 is not the system codepage, for std::cout, use "chcp 65001" to switch
 
 		for (auto it_lexrep = kb_lexreps.begin(); it_lexrep != kb_lexreps.end(); ++it_lexrep) {
+			string& labels = it_lexrep->Labels;
+			if (labels.find("Lit_") == (size_t) 0) {
+				size_t n = std::count(labels.begin(), labels.end(), ';');
+				if (n == (size_t)1) // single literal labels are (re)generated from the rules, to avoid conflicting doubles
+					// std::cout << it_lexrep->Labels << std::endl;
+					continue;
+			}
 			os << ";" << it_lexrep->Meta << ";" << it_lexrep->Token << ";;" << it_lexrep->Labels << endl;
 		}
 		os.close();

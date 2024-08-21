@@ -16,6 +16,8 @@ etc.,\noend
 @zwaar werk,UDConcept
 @om het leven,UDRelation
 @toekomst,UDTime
+@ampère,UDUnit
+@triljoen,UDNumber
 
 @mooi,UDPosSentiment
 @mooie,UDPosSentiment
@@ -56,4 +58,23 @@ etc.,\noend
 @schuldig,UDRelation;UDNegSentiment
 @plannen,UDRelation;UDPosSentiment
 @genegeerd,UDNegation;UDNegSentiment
+
+@zonder,UDIgnoreNegation
+@nergens,UDIgnoreNegation
+@niet-,UDIgnoreNegation
+@lang,UDIgnoreTime
+@termijn,UDIgnoreTime
+@keer,UDIgnoreTime
+@18:00,UDIgnoreTime
+@6.00,UDIgnoreTime
+@donderdag,UDIgnoreTime
+@morgen,UDIgnoreTime
+@jaar,UDIgnoreTime
+@g,UDIgnoreUnit
+@mg,UDIgnoreUnit
+@3m,UDIgnoreUnit
+@1e,UDIgnoreNumber
+@iv,UDIgnoreNumber
+@tientallen,UDIgnoreNumber
+@000,UDIgnoreNumber
 

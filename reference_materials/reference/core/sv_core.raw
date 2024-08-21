@@ -29,6 +29,7 @@ Rhar tagit
 C1stryk
 Pdet har slagit hårt mot deras intjäning och aktiekurserna har tagit stryk
 SUnder 2020 påverkades ABB av pandemi, omstruktureringskostnader och nedskrivning av goodwill.
+<attr type="time" literal="2020" token="2020">
 Runder
 C12020
 Rpåverkades
@@ -41,11 +42,13 @@ C1nedskrivning
 Rav
 C1goodwill
 Punder 2020 påverkades abb av pandemi omstruktureringskostnader och nedskrivning av goodwill
+<attr type="time" span="under 2020">
 SBostadspriserna stiger på bred front .
 C1bostadspriserna
 Rstiger på bred front
 Pbostadspriserna stiger på bred front
 S <Det> visar SBAB och Booli:s data över samtliga registrerade bostadsförsäljningar under februari.
+<attr type="time" literal="februari." token="februari.">
 PR<det>
 Rvisar
 C1sbab
@@ -56,7 +59,9 @@ C3samtliga registrerade bostadsförsäljningar
 Runder
 C1februari
 Pdet visar sbab och booli:s data över samtliga registrerade bostadsförsäljningar under februari
+<attr type="time" span="under februari">
 S <”Det> är tydligt att coronapandemin fortsatte att sätta avtryck på bostadsmarknaden även under februari”, säger <han> i ett pressmeddelande.
+<attr type="time" literal="februari”," token="februari”,">
 PR<det>
 Rär
 C1tydligt
@@ -73,7 +78,9 @@ PR<han>
 Ri
 C1pressmeddelande
 Pdet är tydligt att coronapandemin fortsatte att sätta avtryck på bostadsmarknaden under februari säger han i pressmeddelande
+<attr type="time" span="under februari">
 SLägenhetspriserna steg som mest i Norra Sverige, där uppgången summeras till 3,7%.
+<attr type="measurement" literal="3,7%." token="3,7%." value="3,7" unit="%">
 C1lägenhetspriserna
 Rsteg som mest i
 C2norra sverige
@@ -83,6 +90,8 @@ Rsummeras till
 C13,7%
 Plägenhetspriserna steg som mest i norra sverige där uppgången summeras till 3,7%
 SI Södra Sverige steg priserna med 2,4% och i Mellersta Sverige med 1,6%.
+<attr type="measurement" literal="2,4%" token="2,4%" value="2,4" unit="%">
+<attr type="measurement" literal="1,6%." token="1,6%." value="1,6" unit="%">
 Ri
 C2södra sverige
 Rsteg
@@ -132,6 +141,7 @@ Rän
 C1börsen
 Pindextunga banker visar bättre utveckling än börsen
 SFinansaktier tillhörde igår vinnarna på Wall Street.
+<attr type="time" literal="igår" token="igår">
 C1finansaktier
 Rtillhörde
 C1igår
@@ -140,6 +150,8 @@ Rpå
 C2wall street
 Pfinansaktier tillhörde igår vinnarna på wall street
 SOmsättningen steg 15,2% till 53,2 miljoner kronor (46,2).
+<attr type="measurement" literal="15,2%" token="15,2%" value="15,2" unit="%">
+<attr type="measurement" literal="53,2 miljoner kronor" token="53,2 miljoner kronor" value="53,2 miljoner" unit="kronor">
 C1omsättningen
 Rsteg
 C115,2%
@@ -147,13 +159,16 @@ Rtill
 C353,2 miljoner kronor
 C146,2
 Pomsättningen steg 15,2% till 53,2 miljoner kronor 46,2
+<attr type="measurement" span="15,2% till 53,2 miljoner kronor">
 SRörelseresultatet blev -26,7 miljoner kronor (-38,6).
+<attr type="measurement" literal="-26,7 miljoner kronor" token="-26,7 miljoner kronor" value="-26,7 miljoner" unit="kronor">
 C1rörelseresultatet
 Rblev
 C3-26,7 miljoner kronor
 C1-38,6
 Prörelseresultatet blev -26,7 miljoner kronor -38,6
 SResultatet före skatt var -26,0 miljoner kronor (-38,7).
+<attr type="measurement" literal="-26,0 miljoner kronor" token="-26,0 miljoner kronor" value="-26,0 miljoner" unit="kronor">
 C1resultatet
 Rföre
 C1skatt
@@ -162,6 +177,7 @@ C3-26,0 miljoner kronor
 C1-38,7
 Presultatet före skatt var -26,0 miljoner kronor -38,7
 SResultatet efter skatt blev -27,2 miljoner kronor (-40,8).
+<attr type="measurement" literal="-27,2 miljoner kronor" token="-27,2 miljoner kronor" value="-27,2 miljoner" unit="kronor">
 C1resultatet
 Refter
 C1skatt
@@ -169,31 +185,37 @@ Rblev
 C3-27,2 miljoner kronor
 C1-40,8
 Presultatet efter skatt blev -27,2 miljoner kronor -40,8
-SResultat per aktie hamnade på -0,43 kronor (-0,79).
-C3resultat per aktie
+SResultat per aktie hamnade på -0,43 kronor (-0,79).
+<attr type="measurement" literal="-0,43 kronor" token="-0,43 kronor" value="-0,43" unit="kronor">
+C1resultat
+Rper
+C1aktie
 Rhamnade på
 C2-0,43 kronor
 C1-0,79
 Presultat per aktie hamnade på -0,43 kronor -0,79
-SDe asiatiska börserna visar en blandad utveckling på tisdagen efter gårdagens uppställ i regionen och på Wall Street.
+SDe asiatiska börserna visar en blandad utveckling på tisdagen efter gårdagens uppställ i regionen och på Wall Street.
+<attr type="time" literal="tisdagen" token="tisdagen">
 C2asiatiska börserna
 Rvisar
 C2blandad utveckling
 Rpå
 C1tisdagen
 Refter
-C1gårdagens
-Ruppställ i
+C2gårdagens uppställ
+Ri
 C1regionen
 Roch på
 C2wall street
 Pasiatiska börserna visar blandad utveckling på tisdagen efter gårdagens uppställ i regionen och på wall street
+<attr type="time" span="på tisdagen efter gårdagens uppställ i regionen och på wall street">
 SSydkoreanska börsen steg efter långhelgen.
 C2sydkoreanska börsen
 Rsteg efter
 C1långhelgen
 Psydkoreanska börsen steg efter långhelgen
 SJapanska storbolagsindexet Nikkei 225 sjönk med 0,86% till 29 408,17.
+<attr type="measurement" literal="0,86%" token="0,86%" value="0,86" unit="%">
 C4japanska storbolagsindexet nikkei 225
 Rsjönk med
 C10,86%
@@ -201,6 +223,9 @@ Rtill
 C229 408,17
 Pjapanska storbolagsindexet nikkei 225 sjönk med 0,86% till 29 408,17
 SUnder dagen rörde sig indexet inom intervallet -1,18% som lägst och 1,12% som högst.
+<attr type="time" literal="dagen" token="dagen">
+<attr type="measurement" literal="intervallet -1,18%" token="-1,18%" value="-1,18" unit="%">
+<attr type="measurement" literal="1,12%" token="1,12%" value="1,12" unit="%">
 Runder
 C1dagen
 Rrörde sig
@@ -214,7 +239,9 @@ C11,12%
 Rsom
 C1högst
 Punder dagen rörde sig indexet inom intervallet -1,18% som lägst och 1,12% som högst
+<attr type="time" span="under dagen">
 SDet bredare japanska Topix-indexet backade med 0,40% till 1 894,85.
+<attr type="measurement" literal="0,40%" token="0,40%" value="0,40" unit="%">
 C3bredare japanska topix-indexet
 Rbackade med
 C10,40%
@@ -222,6 +249,8 @@ Rtill
 C21 894,85
 Pbredare japanska topix-indexet backade med 0,40% till 1 894,85
 SAktien, som steg 9,7 procent i ordinarie handel, var upp ytterligare 8,3% på efterbörsen.
+<attr type="measurement" literal="9,7 procent" token="9,7 procent" value="9,7" unit="procent">
+<attr type="measurement" literal="ytterligare 8,3%" token="ytterligare 8,3%" value="8,3" unit="%">
 C1aktien
 Rsom steg
 C29,7 procent
@@ -232,12 +261,14 @@ C2ytterligare 8,3%
 Rpå
 C1efterbörsen
 Paktien som steg 9,7 procent i ordinarie handel var upp ytterligare 8,3% på efterbörsen
-SFinansinspektionen avslutar <sin> undersökning som inleddes i januari 2020 av Swedbanks arbete med informations- och cybersäkerhet, efter att de identifierade bristerna är antingen hanterade eller att betrakta som ringa.
+SFinansinspektionen avslutar <sin> undersökning som inleddes i januari 2020 av Swedbanks arbete med informations- och cybersäkerhet, efter att de identifierade bristerna är antingen hanterade eller att betrakta som ringa.
+<attr type="time" literal="januari 2020" token="januari 2020">
 C1finansinspektionen
 Ravslutar
 PR<sin>
 C1undersökning
-Rsom inleddes i
+Rsom inleddes
+Ri
 C2januari 2020
 Rav
 C2swedbanks arbete
@@ -251,6 +282,7 @@ C1hanterade
 Reller att betrakta som
 C1ringa
 Pfinansinspektionen avslutar sin undersökning som inleddes i januari 2020 av swedbanks arbete med informations- och cybersäkerhet efter att identifierade bristerna är hanterade eller att betrakta som ringa
+<attr type="time" span="i januari 2020">
 S <Det> framgår av ett pressmeddelande.
 PR<det>
 Rframgår av
@@ -315,14 +347,8 @@ C1vinst
 Rpå
 C2egna meriter
 Pbanken fortsätter att prioritera bolag som vi ser har goda förutsättningar att hantera nuvarande marknadsklimat och som kan hålla uppe sin intjäning och vinst på egna meriter
-SListan består av 22 bolag utspridda över sju sektorer.
-C1listan
-Rbestår av
-C222 bolag
-Rutspridda över
-C2sju sektorer
-Plistan består av 22 bolag utspridda över sju sektorer
 S <Hon> ser dock vissa ljusglimtar i rapporten, såsom att onlineförsäljningen ökade med 32 procent och att <man> lyckats minska lagret samt försäljnings- och administrationskostnader.
+<attr type="measurement" literal="32 procent" token="32 procent" value="32" unit="procent">
 PR<hon>
 Rser
 C2vissa ljusglimtar
@@ -371,6 +397,7 @@ Roch
 C2cykliska aktier
 Pkraftiga tillväxten ger slagläge för börsen och cykliska aktier
 SSenaste månaden var något lugnare på investeringsfronten i startups.
+<attr type="time" literal="Senaste månaden" token="Senaste månaden">
 C2senaste månaden
 Rvar
 C1lugnare
@@ -380,6 +407,9 @@ Ri
 C1startups
 Psenaste månaden var lugnare på investeringsfronten i startups
 SFrån att ha legat på 3,4 miljarder kronor i december och 1,9 miljarder i januari landade summan på 1,6 miljarder.
+<attr type="measurement" literal="3,4 miljarder kronor" token="3,4 miljarder kronor" value="3,4 miljarder" unit="kronor">
+<attr type="time" literal="december" token="december">
+<attr type="time" literal="januari" token="januari">
 Rfrån att ha legat på
 C33,4 miljarder kronor
 Ri
@@ -393,6 +423,9 @@ C1summan
 Rpå
 C21,6 miljarder
 Pfrån att ha legat på 3,4 miljarder kronor i december och 1,9 miljarder i januari landade summan på 1,6 miljarder
+<attr type="time" span="i december">
+<attr type="time" span="i januari">
+<attr type="measurement" span="3,4 miljarder kronor i december">
 SBilar med förbränningsmotor, inklusive hybrider, ska fasas ut.
 C1bilar
 Rmed
@@ -426,28 +459,6 @@ C1resenärer
 Röver
 C2hela världen
 Pairshoppen är systerbolag till flygbolaget ving och levererar taxfreeprodukter till resenärer över hela världen
-SDärför har företaget också ett behov av ett stort och välfungerande lager, eftersom <det> ska finnas plats för cirka 1200 produkter inom hudvård, parfymer, accessoarer, godis och alkohol.
-Rhar
-C1företaget
-C1behov
-Rav
-C1stort
-Roch
-C2välfungerande lager
-Reftersom
-PR<det>
-Rska finnas
-C1plats
-Rför
-C3cirka 1200 produkter
-Rinom
-C1hudvård
-C1parfymer
-C1accessoarer
-C1godis
-Roch
-C1alkohol
-Phar företaget behov av stort och välfungerande lager eftersom det ska finnas plats för cirka 1200 produkter inom hudvård parfymer accessoarer godis och alkohol
 SUtöver en platsbesparande layout och högkvalitativ inredning stod även god ergonomi, effektiva plockrutiner och hög säkerhetsnivå på kravlistan.
 Rutöver
 C2platsbesparande layout
@@ -461,16 +472,6 @@ C2hög säkerhetsnivå
 Rpå
 C1kravlistan
 Putöver platsbesparande layout och högkvalitativ inredning stod god ergonomi effektiva plockrutiner och hög säkerhetsnivå på kravlistan
-SUnder fjolårets brutna räkenskapsår redovisades en nedgång i den globala försäljningen på 18 procent.
-Runder
-C3fjolårets brutna räkenskapsår
-Rredovisades
-C1nedgång
-Ri
-C2globala försäljningen
-Rpå
-C218 procent
-Punder fjolårets brutna räkenskapsår redovisades nedgång i globala försäljningen på 18 procent
 SFörsta delen av året handlade bara om att samlas kring hur <vi> skulle hantera krisen.
 C2första delen
 Rav
@@ -508,6 +509,8 @@ Rär
 C3växande antalet prenumeranter
 Pstörsta förklaringen till resultatökningen är växande antalet prenumeranter
 STrots den starka spurten minskade annonsintäkterna med 16,5 procent jämfört med 2019.
+<attr type="measurement" literal="16,5 procent" token="16,5 procent" value="16,5" unit="procent">
+<attr type="time" literal="2019." token="2019.">
 Rtrots
 C2starka spurten
 Rminskade
@@ -517,13 +520,16 @@ C216,5 procent
 Rjämfört med
 C12019
 Ptrots starka spurten minskade annonsintäkterna med 16,5 procent jämfört med 2019
+<attr type="measurement" span="16,5 procent jämfört med 2019">
 SStarkt uppåt för Volvo Cars i februari .
+<attr type="time" literal="februari" token="februari">
 C2starkt uppåt
 Rför
 C2volvo cars
 Ri
 C1februari
 Pstarkt uppåt för volvo cars i februari
+<attr type="time" span="i februari">
 S <Det> är det bästa februariresultatet <hittills,> uppger biltillverkaren i ett pressmeddelande.
 <attr type="time" literal="hittills," token="hittills,">
 PR<det>
@@ -535,22 +541,27 @@ C1biltillverkaren
 Ri
 C1pressmeddelande
 Pdet är bästa februariresultatet hittills uppger biltillverkaren i pressmeddelande
-SFörsäljningen lyfts bland annat av en fortsatt stor återhämtning i Kina, som i inledningen av förra året var delvis nedstängt på grund av pandemin.
+SFörsäljningen lyfts bland annat av en fortsatt stor återhämtning i Kina, som i inledningen av förra året var delvis nedstängt på grund av pandemin.
+<attr type="time" literal="inledningen av förra året" token="inledningen av förra året">
 C1försäljningen
 Rlyfts av
 C3fortsatt stor återhämtning
 Ri
 C1kina
-Rsom i
-C1inledningen
-Rav
-C2förra året
+Rsom
+Ri
+C4inledningen av förra året
 Rvar
 C2delvis nedstängt
 Rpå grund av
 C1pandemin
 Pförsäljningen lyfts av fortsatt stor återhämtning i kina som i inledningen av förra året var delvis nedstängt på grund av pandemin
+<attr type="time" span="i inledningen av förra året">
 SI februari stod elbilarna och hybridvarianterna för omkring en fjärdedel (26,6 procent) av den totala försäljningen globalt och för närmare hälften (44 procent) av försäljningen i Europa.
+<attr type="time" literal="februari" token="februari">
+<attr type="measurement" literal="omkring en fjärdedel" token="omkring en fjärdedel" value="omkring en" unit="fjärdedel">
+<attr type="measurement" literal="(26,6 procent)" token="(26,6 procent)" value="26,6" unit="procent">
+<attr type="measurement" literal="(44 procent)" token="(44 procent)" value="44" unit="procent">
 Ri
 C1februari
 Rstod
@@ -570,16 +581,20 @@ C1försäljningen
 Ri
 C1europa
 Pi februari stod elbilarna och hybridvarianterna för omkring en fjärdedel 26,6 procent av totala försäljningen globalt och för närmare hälften 44 procent av försäljningen i europa
+<attr type="time" span="i februari">
 SNedåt på Stockholmsbörsen .
 Rnedåt på
 C1stockholmsbörsen
 Pnedåt på stockholmsbörsen
-SI Asien föll börserna ganska rejält under torsdagen, då handlare tog hem vinster inför att det finansiella året avslutas den sista mars.
+SI Asien föll börserna ganska rejält under torsdagen, då handlare tog hem vinster inför att det finansiella året avslutas den sista mars.
+<attr type="time" literal="torsdagen," token="torsdagen,">
+<attr type="time" literal="sista mars." token="sista mars.">
 Ri
 C1asien
 Rföll
 C1börserna
-Rganska rejält under
+Rganska rejält
+Runder
 C1torsdagen
 Rdå
 C1handlare
@@ -591,6 +606,7 @@ C2finansiella året
 Ravslutas
 C2sista mars
 Pi asien föll börserna ganska rejält under torsdagen då handlare tog hem vinster inför att finansiella året avslutas sista mars
+<attr type="time" span="under torsdagen">
 SMen <det> finns också en oro i marknaden över både inflation och vaccineffekter.
 PR<det>
 Rfinns
@@ -603,6 +619,7 @@ Roch
 C1vaccineffekter
 Pdet finns oro i marknaden över inflation och vaccineffekter
 SEfter några minuters handel har index fallit med 0,4 procent.
+<attr type="measurement" literal="0,4 procent." token="0,4 procent." value="0,4" unit="procent">
 Refter
 C3några minuters handel
 Rhar
@@ -620,6 +637,8 @@ Roch
 C2höjda hyror
 Pdetta tack vare folkligt motstånd mot lyxrenoveringar och höjda hyror
 SNikkei 225-index sjönk med 2,1 procent, medan det bredare Topixindex gick ned 1 procent.
+<attr type="measurement" literal="2,1 procent," token="2,1 procent," value="2,1" unit="procent">
+<attr type="measurement" literal="1 procent." token="1 procent." value="1" unit="procent">
 C2nikkei 225-index
 Rsjönk med
 C22,1 procent
@@ -629,6 +648,7 @@ Rgick ned
 C21 procent
 Pnikkei 225-index sjönk med 2,1 procent medan bredare topixindex gick ned 1 procent
 SBilden ser likadan ut för kompositindex i Shanghai som tappat 2 procent.
+<attr type="measurement" literal="2 procent." token="2 procent." value="2" unit="procent">
 C1bilden
 Rser
 C1likadan
@@ -644,13 +664,16 @@ C1straffskatten
 Rhöjs för
 C2fossildrivna bilar
 Pstraffskatten höjs för fossildrivna bilar
-SStraffskatten för nya fossildrivna bilar höjs från och med den 1 april.
+SStraffskatten för nya fossildrivna bilar höjs från och med den 1 april.
+<attr type="time" literal="den 1 april." token="den 1 april.">
 C1straffskatten
 Rför
 C3nya fossildrivna bilar
-Rhöjs från och med
+Rhöjs
+Rfrån och med
 C3den 1 april
 Pstraffskatten för nya fossildrivna bilar höjs från och med den 1 april
+<attr type="time" span="från och med den 1 april">
 S <Samtidigt> skärps gränsen för när fordonen omfattas av skatten.
 <attr type="time" literal="Samtidigt" token="Samtidigt">
 PR<samtidigt>
@@ -662,17 +685,20 @@ C1fordonen
 Romfattas av
 C1skatten
 Psamtidigt skärps gränsen för när fordonen omfattas av skatten
-SFordonen beskattas med 82 kronor per gram koldioxid upp till 140 gram, och efter <det> med 107 kronor per gram.
+SFordonen beskattas med 82 kronor per gram koldioxid upp till 140 gram, och efter <det> med 107 kronor per gram.
+<attr type="measurement" literal="82 kronor per gram koldioxid" token="82 kronor per gram" value="82" unit="kronor per gram">
+<attr type="measurement" literal="upp till 140 gram," token="upp till 140 gram," value="upp till 140" unit="gram">
+<attr type="measurement" literal="107 kronor per gram." token="107 kronor per gram." value="107" unit="kronor per gram">
 C1fordonen
 Rbeskattas med
 C582 kronor per gram koldioxid
-Rupp till
-C2140 gram
+C4upp till 140 gram
 Roch efter
 PR<det>
 Rmed
 C4107 kronor per gram
 Pfordonen beskattas med 82 kronor per gram koldioxid upp till 140 gram och efter det med 107 kronor per gram
+<attr type="measurement" span="82 kronor per gram koldioxid">
 SEkobrottsmyndigheten vann.
 C1ekobrottsmyndigheten
 Rvann
@@ -687,6 +713,7 @@ Rfrån
 C4premiärminister boris johnsons regering
 Pbrittiska krisnotan blir oväntat stor enligt budget från premiärminister boris johnsons regering
 SFör att få ordning på statsfinanserna planeras en kraftig höjning av bolagsskatten om två år.
+<attr type="time" literal="två år." token="två år.">
 Rför att få
 C1ordning
 Rpå
@@ -698,6 +725,7 @@ C1bolagsskatten
 Rom
 C2två år
 Pför att få ordning på statsfinanserna planeras kraftig höjning av bolagsskatten om två år
+<attr type="time" span="om två år">
 SEtt skydd för utsatta arbetstagare i producentländerna eller ett konkurrenshinder som riskerar att skada <dem> <det> ska skydda?
 C1skydd
 Rför
@@ -739,11 +767,12 @@ C1brister
 Ruppdagas
 Pföretagen blir inte automatiskt ansvariga för leverantörers agerande men blir skyldiga att genomföra risk- och konsekvensanalyser och vidta åtgärder om brister uppdagas
 <attr type="negation" span="företagen blir inte automatiskt ansvariga för leverantörers agerande">
-SAnnars hotar böter på upp till 2 procent av årsintäkterna, och dessutom diskvalificering från offentliga upphandlingar.
+SAnnars hotar böter på upp till 2 procent av årsintäkterna, och dessutom diskvalificering från offentliga upphandlingar.
+<attr type="measurement" literal="upp till 2 procent" token="upp till 2 procent" value="upp till 2" unit="procent">
 Rannars hotar
 C1böter
-Rpå upp till
-C22 procent
+Rpå
+C4upp till 2 procent
 Rav
 C1årsintäkterna
 Roch
@@ -751,6 +780,7 @@ C1diskvalificering
 Rfrån
 C2offentliga upphandlingar
 Pannars hotar böter på upp till 2 procent av årsintäkterna och diskvalificering från offentliga upphandlingar
+<attr type="measurement" span="böter på upp till 2 procent av årsintäkterna">
 SSådana bestämmelser gäller inte heller <den> som anställs enligt 5 § 1 innan <han eller hon> har genomgått den utbildning som föreskrivs <där.>
 <attr type="negation" literal="gäller inte heller" token="inte heller">
 C1bestämmelser
@@ -772,6 +802,7 @@ Rför
 C1anställning
 Pbehörighet för anställning
 SDenna förordning träder i kraft den 25 februari 2020.
+<attr type="time" literal="den 25 februari 2020." token="den 25 februari 2020.">
 C1förordning
 Rträder i kraft
 C4den 25 februari 2020
@@ -922,21 +953,6 @@ C2arbetsplatsförlagda lärandet
 Ri
 C2gymnasiala lärlingsutbildningen
 P3 § avtal om gymnasial lärlingsanställning får avse hela eller del av tiden för arbetsplatsförlagda lärandet i gymnasiala lärlingsutbildningen
-SOm anställningstiden är kortare än tre veckor, är arbetsgivaren inte skyldig att lämna sådan information.
-<attr type="negation" literal="inte skyldig" token="inte">
-Rom
-C1anställningstiden
-Rär
-C1kortare
-Rän
-C2tre veckor
-Rär
-C1arbetsgivaren
-C2inte skyldig
-Ratt lämna
-C1information
-Pom anställningstiden är kortare än tre veckor är arbetsgivaren inte skyldig att lämna information
-<attr type="negation" span="är arbetsgivaren inte skyldig att lämna information">
 SDe uppgifter om förutsättningarna för anställningens upphörande som avses i andra stycket 3 samt uppgifter som avses i andra stycket 4-6 får, om <det> är lämpligt, lämnas i form av hänvisningar till annan författning, kollektivavtal eller utbildningskontrakt som reglerar dessa frågor.
 C1uppgifter
 Rom
@@ -1228,6 +1244,7 @@ C1tomträtt
 Plagen gäller inte överlåtelse av tomträtt
 <attr type="negation" span="lagen gäller inte överlåtelse av tomträtt">
 S7 § Skall varan transporteras till köparen inom <en och samma> ort eller inom ett område där säljaren <vanligen> ombesörjer transporten av liknande varor, sker avlämnandet när varan överlämnas till köparen.
+<attr type="time" literal="vanligen" token="vanligen">
 C27 §
 Rskall
 C1varan
@@ -1336,6 +1353,8 @@ Rges
 C1efternamn
 P4 § när barn har fötts ska barnet ges efternamn
 S1 § Staten betalar ersättning för personskada enligt denna lag till personer som har fått narkolepsi som med övervägande sannolikhet har orsakats genom användning av vaccinet Pandemrix, om vaccinet har tillhandahållits som ett led i den vaccinationskampanj som genomfördes åren 2009 och 2010 mot influensan A(H1N1).
+<attr type="time" literal="åren 2009" token="åren 2009">
+<attr type="time" literal="2010" token="2010">
 C21 §
 C1staten
 Rbetalar
@@ -1367,7 +1386,9 @@ C12010
 Rmot
 C2influensan a(h1n1)
 P1 § staten betalar ersättning för personskada enligt lag till personer som har fått narkolepsi som med övervägande sannolikhet har orsakats genom användning av vaccinet pandemrix om vaccinet har tillhandahållits som led i vaccinationskampanj som genomfördes åren 2009 och 2010 mot influensan a(h1n1)
+<attr type="time" span="åren 2009 och 2010">
 S3 § <Den> som vill ha ersättning enligt denna lag ska anmäla <sin> skada till försäkringsgivaren i den ordning som anges i § 12 i den lydelse av Åtagande att utge ersättning för läkemedelsskada som började gälla den 1 januari 2010.
+<attr type="time" literal="den 1 januari 2010." token="den 1 januari 2010.">
 C23 §
 PR<den>
 Rsom vill ha
@@ -1460,6 +1481,7 @@ Rfår vidtas med
 C3samtliga bolagsmäns samtycke
 Påtgärder som är främmande för bolagets ändamål får vidtas med samtliga bolagsmäns samtycke
 SK.M. anställdes år 2005 i ett av koncernens andra dotterbolag.
+<attr type="time" literal="år 2005" token="år 2005">
 C1k.m.
 Ranställdes
 C2år 2005
@@ -1467,6 +1489,7 @@ Ri
 C5ett av koncernens andra dotterbolag
 Pk.m. anställdes år 2005 i ett av koncernens andra dotterbolag
 S <Han> påbörjade en anställning hos bolaget den 1 oktober 2014, var <dess> vd och även styrelseledamot.
+<attr type="time" literal="den 1 oktober 2014," token="den 1 oktober 2014,">
 PR<han>
 Rpåbörjade
 C1anställning
@@ -1612,12 +1635,14 @@ Ratt lämna
 C1drogtester
 Pfrivården har bedömt att h.j. har övervakningsbehov och att lämpligaste påföljden för henne vore skyddstillsyn i förening med föreskrift att lämna drogtester
 SGrov stöld har ett minimistraff om sex månader.
+<attr type="time" literal="sex månader." token="sex månader.">
 C2grov stöld
 Rhar
 C1minimistraff
 Rom
 C2sex månader
 Pgrov stöld har minimistraff om sex månader
+<attr type="time" span="om sex månader">
 STingsrätten gör följande bedömning.
 C1tingsrätten
 Rgör
@@ -1778,7 +1803,9 @@ C1kvarnar
 Rtillsammans med
 C1lacknafta
 Pmaterial rivs i kvarnar tillsammans med lacknafta
-SEfter malning och torkning består pulvret av flingor med en diameter mellan 5 och 200 μm, och en tjocklek mellan 0,05 och 1 μm.
+SEfter malning och torkning består pulvret av flingor med en diameter mellan 5 och 200 μm, och en tjocklek mellan 0,05 och 1 μm.
+<attr type="measurement" literal="diameter mellan 5 och 200 μm," token="mellan 5 och 200 μm," value="mellan 5 och 200" unit="μm">
+<attr type="measurement" literal="mellan 0,05 och 1 μm." token="mellan 0,05 och 1 μm." value="mellan 0,05 och 1" unit="μm">
 Refter
 C1malning
 Roch
@@ -1788,18 +1815,13 @@ C1pulvret
 Rav
 C1flingor
 Rmed
-C1diameter
-Rmellan
-C15
-Roch
-C2200 μm
+C6diameter mellan 5 och 200 μm
 Roch
 C1tjocklek
-Rmellan
-C10,05
-Roch
-C21 μm
+C5mellan 0,05 och 1 μm
 Pefter malning och torkning består pulvret av flingor med diameter mellan 5 och 200 μm och tjocklek mellan 0,05 och 1 μm
+<attr type="measurement" span="diameter mellan 5 och 200 μm">
+<attr type="measurement" span="tjocklek mellan 0,05 och 1 μm">
 SDetta pulver används vid tillverkning av sprängämnen, lättbetong, pigment, och taktäckningsmaterial.
 C1pulver
 Ranvänds vid
@@ -1822,6 +1844,7 @@ Rexponerade för
 C1lösningsmedel
 Ppersoner som är exponerade för flingformat aluminiumpulver är samtidigt exponerade för lösningsmedel
 SHalterna av lacknafta uppmättes 1987, och varierade då mellan 24 och 99 mg/m3, med ett medelvärde på 76 mg/m3.
+<attr type="time" literal="1987," token="1987,">
 C1halterna
 Rav
 C1lacknafta
@@ -1873,6 +1896,7 @@ C3fig 1 (12)
 Pandra studier ger stöd för data presenterade i fig 1 (12)
 SI figuren visas ej de alternativa konjugationsreaktionerna, vilka <vanligtvis> föregår utsöndring i urin.
 <attr type="negation" literal="visas ej" token="ej">
+<attr type="time" literal="vanligtvis" token="vanligtvis">
 Ri
 C1figuren
 Rvisas ej
@@ -1986,6 +2010,7 @@ C1"eustress"
 Pi ena anstränger man sig med känsla av olust "distress" medan ansträngningen i andra fallet inte är kopplad till olust "eustress"
 <attr type="negation" span="medan ansträngningen i andra fallet inte är kopplad till olust">
 SDe psykosociala förhållandena i arbetet som <de> beskrivs av KK-modellen, och <dess> utvidgade form som inkluderar socialt stöd, har i en mängd studier visat sig ha samband med olika indikatorer på ohälsa (Karasek et al., 1982).
+<attr type="time" literal="1982)." token="1982).">
 C2psykosociala förhållandena
 Ri
 C1arbetet
@@ -2020,6 +2045,7 @@ C2lysande punkt
 Rskapas
 Pelektronernas rörelseenergi överförs till fosforn varvid denna exciteras och lysande punkt skapas
 SPå en bildskärm som ska kunna återge flera färger innehåller varje pixel i sig tre punkter eller linjer med grundfärger rött, grönt och blått.
+<attr type="measurement" literal="tre punkter" token="tre punkter" value="tre" unit="punkter">
 Rpå
 C1bildskärm
 Rsom ska kunna återge
@@ -2035,12 +2061,13 @@ C1grönt
 Roch
 C1blått
 Ppå bildskärm som ska kunna återge flera färger innehåller varje pixel tre punkter eller linjer med grundfärger rött grönt och blått
-SEn högupplösande skärm med stor bildyta kan ha upp till 2 000 x 1 400 pixel.
+SEn högupplösande skärm med stor bildyta kan ha upp till 2 000 x 1 400 pixel.
+<attr type="measurement" literal="upp till 2 000 x 1 400 pixel." token="upp till 2 000 x 1 400 pixel." value="upp till 2 000 x 1 400" unit="pixel">
 C2högupplösande skärm
 Rmed
 C2stor bildyta
-Rkan ha upp till
-C62 000 x 1 400 pixel
+Rkan ha
+C8upp till 2 000 x 1 400 pixel
 Phögupplösande skärm med stor bildyta kan ha upp till 2 000 x 1 400 pixel
 SHypotesen om att skilda trötthetsupplevelser kan beskrivas med 45 verbala uttryck, fördelade på fem faktorer (tabell 4), testades med en konfirmativ faktoranalys i LISREL7.
 C1hypotesen
@@ -2069,6 +2096,7 @@ Rse
 C3stycket statistisk bearbetning
 Pvia stegvisa post hoc-analyser kunde antalet variabler reduceras ytterligare för kriterier se stycket statistisk bearbetning
 SKvar blev 25 variabler <jämt> fördelade på fem faktorer.
+<attr type="time" literal="jämt" token="jämt">
 Rkvar blev
 C225 variabler
 PR<jämt>
@@ -2157,6 +2185,7 @@ Rav
 C1försiktighetsprincipen
 Preach registration evaluation authorisation and restriction of chemical substances som tillämpas av eu innehåller inslag av försiktighetsprincipen
 S <Det> är välkänt att exponering för hög halt av mögelsporer ökar risken för allergisk alveolit hos till exempel sågverksarbetare, lantbrukare och andra yrkesgrupper som hanterar biologiskt material (Eduard 2006).
+<attr type="time" literal="(Eduard 2006)." token="2006).">
 PR<det>
 Rär
 C1välkänt
@@ -2240,6 +2269,7 @@ Roch
 C1tidspress
 Pviktig stressfaktor är kvantitativ överbelastning och tidspress
 STidspress, <oftast> i form av deadline, är inbyggd i arbetsprocessen.
+<attr type="time" literal="oftast" token="oftast">
 C1tidspress
 PR<oftast>
 Ri form av
@@ -2373,6 +2403,7 @@ Rvid
 C1resultatpresentationen
 Pteman som återkommit i flera intervjuer har givits särskild vikt vid resultatpresentationen
 SOm intervjun hade varit ostrukturerad, eller öppen, skulle bearbetningen ha blivit mera komplex med kvalitativa tolkningar av materialet (Kruuse 1998).
+<attr type="time" literal="(Kruuse 1998)." token="1998).">
 Rom
 C1intervjun
 Rhade varit
@@ -2493,6 +2524,7 @@ Rpå grund av
 C1faktorn
 Pdetta gäller om exponeringen förskjuter tidpunkten för insjuknandet dvs att personer som skulle drabbas av cancer insjuknar i lägre ålder på grund av faktorn
 SDetta mått har varit föremål för diskussion i amerikanska domstolar, <ofta> i samband med cancer orsakad av radioaktiv strålning.
+<attr type="time" literal="ofta" token="ofta">
 C1mått
 Rhar varit
 C1föremål
@@ -2618,14 +2650,14 @@ C13
 Pfrågor angående sjukfrånvaro sjuknärvaro och två frågor om självskattad hälsa ingår i studie se nedan och tabell 1 och 3
 SSjukfrånvaro.
 C1sjukfrånvaro
-SHur många dagar under de senaste 12 månaderna har <du> sammanlagt varit borta från arbetet på grund av egen sjukdom (sjukskrivning, vård, behandling eller undersökning)?
+SHur många dagar under de senaste 12 månaderna har <du> sammanlagt varit borta från arbetet på grund av egen sjukdom (sjukskrivning, vård, behandling eller undersökning)?
+<attr type="time" literal="senaste 12 månaderna" token="senaste 12 månaderna">
 C3hur många dagar
 Runder
 C3senaste 12 månaderna
 Rhar
 PR<du>
-Rsammanlagt
-Rvarit
+Rsammanlagt varit
 C1borta
 Rfrån
 C1arbetet
@@ -2637,6 +2669,7 @@ C1behandling
 Reller
 C1undersökning
 Phur många dagar under senaste 12 månaderna har du sammanlagt varit borta från arbetet på grund av egen sjukdom sjukskrivning vård behandling eller undersökning
+<attr type="time" span="under senaste 12 månaderna">
 S <Det> behövs alternativ till djurförsök som kan användas för läkemedelsutveckling.
 PR<det>
 Rbehövs
@@ -2646,7 +2679,8 @@ C1djurförsök
 Rsom kan användas för
 C1läkemedelsutveckling
 Pdet behövs alternativ till djurförsök som kan användas för läkemedelsutveckling
-SDärför har forskare vid KTH, Karolinska Institutet och Harvard University skapat en modell av kroppen av en samling chip.
+S <Därför> har forskare vid KTH, Karolinska Institutet och Harvard University skapat en modell av kroppen av en samling chip.
+PR<därför>
 Rhar
 C1forskare
 Rvid
@@ -2660,7 +2694,7 @@ Rav
 C1kroppen
 Rav
 C2samling chip
-Phar forskare vid kth karolinska institutet och harvard university skapat modell av kroppen av samling chip
+Pdärför har forskare vid kth karolinska institutet och harvard university skapat modell av kroppen av samling chip
 SVarje chip är ungefär lika stort som ett USB-minne och innehåller celler från ett organ som chipet representerar.
 C2varje chip
 Rär
@@ -2772,6 +2806,8 @@ C2demens prognos
 Pverktyg visar väntad livslängd vid demens prognos
 SForskare har följt drygt 50 000 patienter som <någon gång> mellan åren 2007 och 2015 har blivit diagnostiserade med en demenssjukdom och registrerats i Svenska demensregistret.
 <attr type="time" literal="någon gång" token="någon gång">
+<attr type="time" literal="åren 2007" token="åren 2007">
+<attr type="time" literal="2015" token="2015">
 C1forskare
 Rhar följt
 C4drygt 50 000 patienter
@@ -2786,6 +2822,7 @@ C1demenssjukdom
 Roch registrerats i
 C2svenska demensregistret
 Pforskare har följt drygt 50 000 patienter som någon gång mellan åren 2007 och 2015 har blivit diagnostiserade med demenssjukdom och registrerats i svenska demensregistret
+<attr type="time" span="någon gång mellan åren 2007 och 2015">
 S <De> ville undersöka vilken roll ett antal faktorer spelar för förväntad livslängd.
 PR<de>
 Rville undersöka
@@ -2912,14 +2949,15 @@ Ri
 C1hjärnan
 Rupphör
 Pexempel på situation är trafikolycka där någon får skallskada som får hjärnan att svullna så kraftigt att cirkulationen i hjärnan upphör
-SDå uppstår en total hjärninfarkt, hjärndöd, och patienten dödförklaras.
+S <Då> uppstår en total hjärninfarkt, hjärndöd, och patienten dödförklaras.
+PR<då>
 Ruppstår
 C2total hjärninfarkt
 C1hjärndöd
 Roch
 C1patienten
 Rdödförklaras
-Puppstår total hjärninfarkt hjärndöd och patienten dödförklaras
+Pdå uppstår total hjärninfarkt hjärndöd och patienten dödförklaras
 SDe två forskargrupperna har <båda> studerat immunförsvaret hos en grupp holländska barn vars föräldrar tackat nej till alla vaccinationer av religiösa skäl.
 <attr type="negation" literal="nej" token="nej">
 C2två forskargrupperna
@@ -3079,7 +3117,8 @@ C3kraftiga lokala utbrott
 Rmed
 C2nya virusvarianter
 Pmål är att dämpa kraftiga lokala utbrott med nya virusvarianter
-S»Ju fler av de nya varianterna <vi> lyckas klippa, desto flackare kommer den tredje vågen att bli«.
+S <»Ju> fler av de nya varianterna <vi> lyckas klippa, desto flackare kommer den tredje vågen att bli«.
+PR<ju>
 C1fler
 Rav
 C2nya varianterna
@@ -3089,7 +3128,7 @@ C1flackare
 Rkommer
 C2tredje vågen
 Ratt bli
-Pfler av nya varianterna vi lyckas klippa flackare kommer tredje vågen att bli
+Pju fler av nya varianterna vi lyckas klippa flackare kommer tredje vågen att bli
 SHur har <ni> lyckats <hittills?>
 <attr type="time" literal="hittills?" token="hittills?">
 Rhur har
@@ -3153,6 +3192,7 @@ Reller
 C1presternalt
 Pde är vanligast på armar ben eller presternalt
 S <Hon> hade också haft symtom i form av trötthet och allmän muskelsvaghet sedan 2 veckor tillbaka varför <hon> hade sökt vårdcentral och påbörjat kortisonbehandling för misstänkt polymyalgia rheumatica.
+<attr type="time" literal="sedan 2 veckor tillbaka" token="sedan 2 veckor tillbaka">
 PR<hon>
 Rhade haft
 C1symtom
@@ -3196,21 +3236,6 @@ C1lungemboli
 Reller
 C1perikardvätska
 Pmed tanke på hypotoni takykardi och tryck i bröstet påbörjades utredning med datortomografi av torax och buk med kontrastvätska på grund av misstanke om aortadissektion lungemboli eller perikardvätska
-SEn 67-årig man med prostatacancer och malignt mesoteliom skrevs in i ASIH för hjälp med smärtbehandling i hemmet.
-C267-årig man
-Rmed
-C1prostatacancer
-Roch
-C2malignt mesoteliom
-Rskrevs in i
-C1asih
-Rför
-C1hjälp
-Rmed
-C1smärtbehandling
-Ri
-C1hemmet
-P67-årig man med prostatacancer och malignt mesoteliom skrevs in i asih för hjälp med smärtbehandling i hemmet
 SPatienten hade <tidigare> genomgått prostatektomi, pulm- och pleurektomi samt fått adjuvant strålbehandling med totalt 106 Gy och cytostatika.
 <attr type="time" literal="tidigare" token="tidigare">
 C1patienten
@@ -3276,6 +3301,7 @@ Rtill
 C1asih
 Phan led av svåra smärtor från höger sida av bröstkorgen vilket var primära orsaken till anslutningen till asih
 SDen 76-årige änklingen bodde i en treplansvilla, där <han> bedrev hantverksverksamhet i källaren.
+<attr type="measurement" literal="76-årige änklingen" token="76-årige" value="76" unit="årige">
 C276-årige änklingen
 Rbodde i
 C1treplansvilla
@@ -3286,6 +3312,7 @@ C1hantverksverksamhet
 Ri
 C1källaren
 P76-årige änklingen bodde i treplansvilla där han bedrev hantverksverksamhet i källaren
+<attr type="measurement" span="76-årige änklingen">
 S <Han> var aktiv och vital, men de allt tätare svimningarna hade krympt livet för <honom.>
 PR<han>
 Rvar
@@ -3306,6 +3333,7 @@ Rförsökte ställa sig upp svimmade
 PR<han>
 Pnär han försökte ställa sig upp svimmade han
 SFyra månader efter vrickningen antecknade överläkare vid medicinska kliniken att <det> <fortfarande> fanns en rejäl svullnad över ankeln.
+<attr type="time" literal="Fyra månader" token="Fyra månader">
 <attr type="time" literal="fortfarande" token="fortfarande">
 C2fyra månader
 Refter
@@ -3322,6 +3350,7 @@ C2rejäl svullnad
 Röver
 C1ankeln
 Pfyra månader efter vrickningen antecknade överläkare vid medicinska kliniken att det fortfarande fanns rejäl svullnad över ankeln
+<attr type="time" span="fyra månader efter vrickningen">
 S <Han> avsåg att ta del av distriktläkarens journal och fortsatte behandling med urindrivande medel.
 PR<han>
 Ravsåg att ta del av
@@ -3332,6 +3361,7 @@ Rmed
 C2urindrivande medel
 Phan avsåg att ta del av distriktläkarens journal och fortsatte behandling med urindrivande medel
 SYtterligare fyra månader senare var höger fot <fortfarande> svullen.
+<attr type="time" literal="Ytterligare fyra månader senare" token="Ytterligare fyra månader senare">
 <attr type="time" literal="fortfarande" token="fortfarande">
 C4ytterligare fyra månader senare
 Rvar
@@ -3459,6 +3489,7 @@ Rav
 C1höftleden
 Porsaken till patientens besvär skall med rimlig sannolikhet kunna hänföras till degenerativ sjukdom av höftleden
 S <I vissa fall> går <detta> dock inte att separera helt.
+<attr type="time" literal="I vissa fall" token="I vissa fall">
 <attr type="negation" literal="inte att separera helt." token="inte">
 PR<i vissa fall>
 Rgår
@@ -3478,6 +3509,7 @@ Roch
 C1förlopp
 Ppatienten skall få information om sjukdomen dess orsaker och förlopp
 SPatienten skall ges möjlighet till träning eftersom <detta> <ofta> kan påverka sjukdomen i gynnsam riktning och sannolikt också förbättrar prognosen vid kirurgi.
+<attr type="time" literal="ofta" token="ofta">
 C1patienten
 Rskall ges
 C1möjlighet
@@ -3495,7 +3527,8 @@ C1prognosen
 Rvid
 C1kirurgi
 Ppatienten skall ges möjlighet till träning eftersom detta ofta kan påverka sjukdomen i gynnsam riktning och sannolikt förbättrar prognosen vid kirurgi
-SBåde priset och storleken på givare för mätning av krafter och rörelse har minskat mycket under det senaste årtiondet.
+SBåde priset och storleken på givare för mätning av krafter och rörelse har minskat mycket under det senaste årtiondet.
+<attr type="time" literal="senaste årtiondet." token="senaste årtiondet.">
 C1priset
 Roch
 C1storleken
@@ -3507,9 +3540,11 @@ Rav
 C1krafter
 Roch
 C1rörelse
-Rhar minskat mycket under
+Rhar minskat mycket
+Runder
 C2senaste årtiondet
 Ppriset och storleken på givare för mätning av krafter och rörelse har minskat mycket under senaste årtiondet
+<attr type="time" span="under senaste årtiondet">
 S <Detta> beror framförallt på <deras> tillämpbarhet i masstillverkade prylar för hemelektronik och bilindustrin.
 PR<detta>
 Rberor på
@@ -3571,6 +3606,7 @@ Roch
 C1vinkelgivare
 Pkan man välja att observera förändringar i gångmönstret så som extra belastningar eller rörelser som begränsningen i ankeln medför med kraft och vinkelgivare
 SUnder hemresan, efter cirka 40 minuter, föll en krögare från Skåne ner för en hög, brant trappa.
+<attr type="time" literal="cirka 40 minuter," token="cirka 40 minuter,">
 Runder
 C1hemresan
 Refter
@@ -3583,6 +3619,7 @@ Rner för
 C1hög
 C2brant trappa
 Punder hemresan efter cirka 40 minuter föll krögare från skåne ner för hög brant trappa
+<attr type="time" span="efter cirka 40 minuter">
 SMannen låg nedanför trappan i ett mycket trångt utrymme, avsvimmad, med armar och ben i påtaglig oordning och med ett mosat ansikte.
 C1mannen
 Rlåg nedanför
@@ -3640,6 +3677,7 @@ PR<något>
 Pskickade medicinsk rapport med patienten men hörde aldrig något
 <attr type="negation" span="men hörde aldrig något">
 S <Han> hade en stroke för ett år sedan, är hyggligt rehabiliterad men har kvarstående försvagning på vä sida, lite långsamt tal och ängslighet men är fullt klar och redig.
+<attr type="time" literal="för ett år sedan," token="för ett år sedan,">
 PR<han>
 Rhade
 C1stroke
@@ -3671,8 +3709,9 @@ Ri
 PR<sin>
 C1lägenhet
 Pgår med rollator utomhus och mellan möbler i sin lägenhet
-S <Hon> ska <nu> genomgå en starroperation och behöver ögondroppar flera gånger om dagen efter operationen.
+S <Hon> ska <nu> genomgå en starroperation och behöver ögondroppar flera gånger om dagen efter operationen.
 <attr type="time" literal="nu" token="nu">
+<attr type="time" literal="flera gånger om dagen" token="flera gånger om dagen">
 PR<hon>
 Rska
 PR<nu>
@@ -3680,12 +3719,11 @@ Rgenomgå
 C1starroperation
 Roch behöver
 C1ögondroppar
-C2flera gånger
-Rom
-C1dagen
+C4flera gånger om dagen
 Refter
 C1operationen
 Phon ska nu genomgå starroperation och behöver ögondroppar flera gånger om dagen efter operationen
+<attr type="time" span="flera gånger om dagen efter operationen">
 SI samband med besöket hos ögonläkare inför operationen bedömer <han> tillsammans med kvinna att <hon> kommer att behöva hjälp med ögondropparna efter operationen, på grund av <sin> nedsatta syn och Parkinson.
 Ri samband med
 C1besöket
@@ -3721,6 +3759,7 @@ Rav
 C1distriktssköterskan
 Phan har flera läkemedel som delas i dosett av distriktssköterskan
 SDottern ringer dagligen hem till pappan och påminner <honom> om när <han> ska ta <sina> läkemedel.
+<attr type="time" literal="dagligen" token="dagligen">
 C1dottern
 Rringer
 C1dagligen
@@ -3774,6 +3813,8 @@ Rmed
 C1tiden
 Pyngre medelålders tracheotomerad kvinna som är ansluten till distrikts- och hemsjukvården har utbredda lungförändringar som kommer att kvarstå och bli sämre med tiden
 SHar syrgasbehandling dygnet runt och ventilator nattetid.
+<attr type="time" literal="dygnet runt" token="dygnet runt">
+<attr type="time" literal="nattetid." token="nattetid.">
 Rhar
 C1syrgasbehandling
 C2dygnet runt
@@ -3785,6 +3826,7 @@ SInga kognitiva störningar.
 <attr type="negation" literal="Inga kognitiva störningar." token="Inga">
 C3inga kognitiva störningar
 SFör att underlätta andningen behöver trachealkanylen sugas nattetid.
+<attr type="time" literal="nattetid." token="nattetid.">
 Rför att underlätta
 C1andningen
 Rbehöver
@@ -3792,13 +3834,15 @@ C1trachealkanylen
 Rsugas
 C1nattetid
 Pför att underlätta andningen behöver trachealkanylen sugas nattetid
-SKartläggning med alkoholalmanacka visar tjugo standardglas per vecka, 3-5 glas per tillfälle.
+SKartläggning med alkoholalmanacka visar tjugo standardglas per vecka, 3-5 glas per tillfälle.
 C1kartläggning
 Rmed
 C1alkoholalmanacka
 Rvisar
 C4tjugo standardglas per vecka
-C43-5 glas per tillfälle
+C23-5 glas
+Rper
+C1tillfälle
 Pkartläggning med alkoholalmanacka visar tjugo standardglas per vecka 3-5 glas per tillfälle
 SFem av beroendekriterierna är uppfyllda.
 C1fem
@@ -3814,8 +3858,10 @@ C1depressionsskala
 C2lätt depression
 Pångestskala måttlig ångest depressionsskala lätt depression
 SBlodtryck 142/85.
+<attr type="measurement" literal="Blodtryck 142/85." token="142/85." value="142/85">
 C2blodtryck 142/85
 SLeif är 83 år och bor själv i ett hus och har på grund av långvarig sjukdom svårt att klara sig själv.
+<attr type="measurement" literal="83 år" token="83 år" value="83" unit="år">
 C1leif
 Rär
 C283 år
@@ -3846,6 +3892,7 @@ Rpå
 C1äldreboende
 Pnu överväger biståndshandläggaren att erbjuda leif plats på äldreboende
 SFör ett år sedan upptäckte <hon> en knöl i bröstet och att huden var något indragen samt hudrodnad runt bröstet.
+<attr type="time" literal="För ett år sedan" token="För ett år sedan">
 C4för ett år sedan
 Rupptäckte
 PR<hon>
@@ -3917,6 +3964,7 @@ Rkunde vara
 C1cancer
 Pefter beskedet fick siv chock trots att hon hade anat att det kunde vara cancer
 S <Det> dröjde nästan ett år innan <hon> sökte läkare för <sina> besvär.
+<attr type="time" literal="nästan ett år" token="nästan ett år">
 PR<det>
 Rdröjde
 C3nästan ett år
@@ -3928,13 +3976,6 @@ Rför
 PR<sina>
 C1besvär
 Pdet dröjde nästan ett år innan hon sökte läkare för sina besvär
-S <Hon> kände periodvis stelhet i höger sida.
-PR<hon>
-Rkände
-C2periodvis stelhet
-Ri
-C2höger sida
-Phon kände periodvis stelhet i höger sida
 SSkakningarna tilltog och <hennes> rörelser blev långsammare.
 C1skakningarna
 Rtilltog och
@@ -3975,6 +4016,7 @@ Roch
 C2smärtstillande läkemedel
 Phan skrev ut lugnade och smärtstillande läkemedel
 SEfter ytterligare ett år fick <hon> ett skov med omfattande känselbortfall och stark yrsel.
+<attr type="time" literal="ytterligare ett år" token="ytterligare ett år">
 Refter
 C3ytterligare ett år
 Rfick
@@ -3985,19 +4027,7 @@ C2omfattande känselbortfall
 Roch
 C2stark yrsel
 Pefter ytterligare ett år fick hon skov med omfattande känselbortfall och stark yrsel
-S <Hon> fick även smärtor i ena skuldran och <hennes> ena fot släpade efter då <hon> gick.
-PR<hon>
-Rfick
-C1smärtor
-Ri
-C2ena skuldran
-Roch
-PR<hennes>
-C2ena fot
-Rsläpade efter då
-PR<hon>
-Rgick
-Phon fick smärtor i ena skuldran och hennes ena fot släpade efter då hon gick
+<attr type="time" span="efter ytterligare ett år">
 SNär <han> kommer in till akuten har <han> svårt att gå upprätt.
 Rnär
 PR<han>
@@ -4009,6 +4039,7 @@ Rsvårt att gå
 C1upprätt
 Pnär han kommer in till akuten har han svårt att gå upprätt
 S <Han> har feber, 38,1º och kräks <ofta.>
+<attr type="time" literal="ofta." token="ofta.">
 PR<han>
 Rhar
 C1feber
@@ -4061,6 +4092,7 @@ C1hjärtsjukdom
 Phan rökte inte och hade inte ärftlighet för hjärtsjukdom
 <attr type="negation" span="han rökte inte och hade inte ärftlighet för hjärtsjukdom">
 SBlodtrycket var 156/88 mm Hg, och vid auskultation av hjärtat hördes ett svagt systoliskt blåsljud.
+<attr type="measurement" literal="156/88 mm Hg," token="156/88 mm Hg," value="156/88" unit="mm hg">
 C1blodtrycket
 Rvar
 C3156/88 mm hg
@@ -4071,7 +4103,9 @@ C1hjärtat
 Rhördes
 C3svagt systoliskt blåsljud
 Pblodtrycket var 156/88 mm hg och vid auskultation av hjärtat hördes svagt systoliskt blåsljud
+<attr type="measurement" span="blodtrycket var 156/88 mm hg">
 SEKG visade sinusrytm 64/min och höga ST-avgångar i bröst­avledningarna, dock inom normalområdet för män och utan ischemitecken (se Figur 1).
+<attr type="measurement" literal="sinusrytm 64/min" token="64/min" value="64/min">
 <attr type="negation" literal="utan" token="utan">
 C1ekg
 Rvisade
@@ -4092,6 +4126,7 @@ C2figur 1
 Pekg visade sinusrytm 64/min och höga st-avgångar i bröstavledningarna inom normalområdet för män och utan ischemitecken se figur 1
 <attr type="negation" span="utan ischemitecken">
 SHögkänsligt troponin T taget mer än 3 timmar efter smärtdebut var <5 ng/l.
+<attr type="time" literal="mer än 3 timmar" token="mer än 3 timmar">
 C4högkänsligt troponin t taget
 C4mer än 3 timmar
 Refter
@@ -4099,6 +4134,7 @@ C1smärtdebut
 Rvar
 C2<5 ng/l
 Phögkänsligt troponin t taget mer än 3 timmar efter smärtdebut var <5 ng/l
+<attr type="time" span="mer än 3 timmar efter smärtdebut">
 S <Han> får en spruta med pollenallergen i vardera arm och får <därefter> gå ut i väntrummet.
 <attr type="time" literal="därefter" token="därefter">
 PR<han>
@@ -4114,6 +4150,7 @@ Rgå ut i
 C1väntrummet
 Phan får spruta med pollenallergen i vardera arm och får därefter gå ut i väntrummet
 SInom ett par minuter kommer <han> tillbaka och säger att <han> inte mår bra, ” känns som om huvudet skall sprängas”.
+<attr type="time" literal="ett par minuter" token="ett par minuter">
 <attr type="negation" literal="inte mår bra," token="inte">
 Rinom
 C3ett par minuter
@@ -4130,6 +4167,7 @@ C1huvudet
 Rskall sprängas
 Pinom ett par minuter kommer han tillbaka och säger att han inte mår bra känns som om huvudet skall sprängas
 <attr type="negation" span="att han inte mår bra">
+<attr type="time" span="inom ett par minuter">
 SÖgonen har börjat svullna och <han> upplever ett inre obehag och klåda över hela kroppen.
 C1ögonen
 Rhar börjat svullna och
@@ -4150,6 +4188,7 @@ Roch
 C1ben
 Psmå utslag börjar uppträda på mage armar och ben
 S <Hon> har genomgått ”gastric bypass” (GB) för 9 år sedan som behandling för påstådd övervikt, men lipödemdepåerna förändrades inte, vilket inte var att vänta.
+<attr type="time" literal="för 9 år sedan" token="för 9 år sedan">
 <attr type="negation" literal="förändrades inte," token="inte,">
 <attr type="negation" literal="vilket inte var att vänta." token="inte">
 PR<hon>
@@ -4202,6 +4241,8 @@ Ri
 C2västra götalandsregionen
 Psmittspridningen tar ny fart i västra götalandsregionen
 SI en rapport som fanns tillgänglig på Folkhälsomyndighetens sajt på tisdagsmorgonen presenteras nya beräkningar om smittspridningens möjliga utveckling de kommande tre månaderna.
+<attr type="time" literal="tisdagsmorgonen" token="tisdagsmorgonen">
+<attr type="time" literal="kommande tre månaderna." token="kommande tre månaderna.">
 Ri
 C1rapport
 Rsom fanns
@@ -4216,7 +4257,10 @@ Rom
 C3smittspridningens möjliga utveckling
 C3kommande tre månaderna
 Pi rapport som fanns tillgänglig på folkhälsomyndighetens sajt på tisdagsmorgonen presenteras nya beräkningar om smittspridningens möjliga utveckling kommande tre månaderna
-SBakgrunden till analysen är att myndigheten i november fick ett uppdrag av regeringen att kontinuerligt uppdatera <sina> scenarier om pandemin, och även göra bedömningar om lämpliga insatser.
+<attr type="time" span="på tisdagsmorgonen">
+SBakgrunden till analysen är att myndigheten i november fick ett uppdrag av regeringen att <kontinuerligt> uppdatera <sina> scenarier om pandemin, och även göra bedömningar om lämpliga insatser.
+<attr type="time" literal="november" token="november">
+<attr type="time" literal="kontinuerligt" token="kontinuerligt">
 C1bakgrunden
 Rtill
 C1analysen
@@ -4229,7 +4273,9 @@ Rfick
 C1uppdrag
 Rav
 C1regeringen
-Ratt kontinuerligt uppdatera
+Ratt
+PR<kontinuerligt>
+Ruppdatera
 PR<sina>
 C1scenarier
 Rom
@@ -4239,6 +4285,7 @@ C1bedömningar
 Rom
 C2lämpliga insatser
 Pbakgrunden till analysen är att myndigheten i november fick uppdrag av regeringen att kontinuerligt uppdatera sina scenarier om pandemin och göra bedömningar om lämpliga insatser
+<attr type="time" span="i november">
 SPolisen varnar för snåriga virusregler .
 C1polisen
 Rvarnar för
@@ -4264,6 +4311,7 @@ Rfår svårt att veta
 Rvad som gäller
 Potydligheten kan leda till att allmänheten får svårt att veta vad som gäller
 S <Det> rör sig om ett relativt snårigt regelverk som därtill <ofta> ändras eller utvidgas.
+<attr type="time" literal="ofta" token="ofta">
 PR<det>
 Rrör sig om
 C3relativt snårigt regelverk
@@ -4272,6 +4320,7 @@ PR<ofta>
 Rändras eller utvidgas
 Pdet rör sig om relativt snårigt regelverk som ofta ändras eller utvidgas
 SEn av de mest omdiskuterade frågorna i Sverige den senaste tiden har varit sportlovets effekt på smittspridningen.
+<attr type="time" literal="senaste tiden" token="senaste tiden">
 C6en av de mest omdiskuterade frågorna
 Ri
 C1sverige
@@ -4301,14 +4350,18 @@ C2ökad smitta
 Psmittskyddsläkarna i dalarna och jämtland härjedalen två regionerna med populäraste skidorterna säger att skidturismen hittills inte verkar ha lett till ökad smitta
 <attr type="negation" span="att skidturismen hittills inte verkar ha lett till ökad smitta">
 SKlackarna i taket som på det glada 1920-talet.
+<attr type="time" literal="glada 1920-talet." token="1920-talet.">
 C1klackarna
 Ri
 C1taket
 Rsom på
 C2glada 1920-talet
 Pklackarna i taket som på glada 1920-talet
-SVisserligen tillhör 60-åringen inte en riskgrupp, men <han> har en släkting som låg på sjukhus i flera veckor.
+S <Visserligen> tillhör 60-åringen inte en riskgrupp, men <han> har en släkting som låg på sjukhus i flera veckor.
+<attr type="measurement" literal="60-åringen" token="60-åringen" value="60" unit="åringen">
 <attr type="negation" literal="inte" token="inte">
+<attr type="time" literal="flera veckor." token="flera veckor.">
+PR<visserligen>
 Rtillhör
 C160-åringen
 Rinte
@@ -4321,8 +4374,9 @@ Rsom låg på
 C1sjukhus
 Ri
 C2flera veckor
-Ptillhör 60-åringen inte riskgrupp men han har släkting som låg på sjukhus i flera veckor
-<attr type="negation" span="tillhör 60-åringen inte riskgrupp">
+Pvisserligen tillhör 60-åringen inte riskgrupp men han har släkting som låg på sjukhus i flera veckor
+<attr type="negation" span="visserligen tillhör 60-åringen inte riskgrupp">
+<attr type="time" span="i flera veckor">
 S– <Jag> är försiktig.
 PR<jag>
 Rär
@@ -4371,6 +4425,7 @@ PR<sitt>
 C1arbete
 Pinnan jag kan säga mer om fallet måste teknikerna avsluta sitt arbete
 SUndersökningen görs systematiskt och <det> tar tid, kanske hela dagen.
+<attr type="time" literal="hela dagen." token="hela dagen.">
 C1undersökningen
 Rgörs systematiskt
 Roch
@@ -4390,6 +4445,8 @@ Refter
 C2stort smittoutbrott
 Pskola i mönsterås hålls stängd efter stort smittoutbrott
 SNästan en tredjedel av personalen har insjuknat i covid-19 under de senaste två veckorna och <samtidigt> har en tiondel av skolans låg- och mellanstadieelever konstaterats smittade.
+<attr type="measurement" literal="Nästan en tredjedel" token="Nästan en tredjedel" value="nästan en" unit="tredjedel">
+<attr type="time" literal="senaste två veckorna" token="senaste två veckorna">
 <attr type="time" literal="samtidigt" token="samtidigt">
 C3nästan en tredjedel
 Rav
@@ -4407,6 +4464,8 @@ C4skolans låg- och mellanstadieelever
 Rkonstaterats
 C1smittade
 Pnästan en tredjedel av personalen har insjuknat i covid-19 under senaste två veckorna och samtidigt har tiondel av skolans låg- och mellanstadieelever konstaterats smittade
+<attr type="time" span="under senaste två veckorna">
+<attr type="measurement" span="nästan en tredjedel av personalen">
 SMetoo hånades först i Frankrike och Danmark.
 C1metoo
 Rhånades först i
@@ -4443,6 +4502,7 @@ Rmed
 C3minst antal dödsfall
 Pnorge är ett av de länder i europa som klarat coronapandemin med minst antal dödsfall
 SSmittspridningen har den senaste tiden ökat vilket tvingade kommunledningen i Oslo att införa striktare restriktioner där bland annat butiker och restauranger tvingats att stänga.
+<attr type="time" literal="senaste tiden" token="senaste tiden">
 C1smittspridningen
 Rhar
 C2senaste tiden
@@ -4460,6 +4520,7 @@ C1restauranger
 Rtvingats att stänga
 Psmittspridningen har senaste tiden ökat vilket tvingade kommunledningen i oslo att införa striktare restriktioner där butiker och restauranger tvingats att stänga
 SEtt tufft besked för stadens invånare som levt under landets hårdaste restriktioner sedan flera månader tillbaka.
+<attr type="time" literal="sedan flera månader tillbaka." token="sedan flera månader tillbaka.">
 C2tufft besked
 Rför
 C2stadens invånare
@@ -4468,6 +4529,8 @@ C3landets hårdaste restriktioner
 C4sedan flera månader tillbaka
 Ptufft besked för stadens invånare som levt under landets hårdaste restriktioner sedan flera månader tillbaka
 SFrån och med tisdagen och fram till den 15 mars stänger serveringsställen och butiker i den norska huvudstaden.
+<attr type="time" literal="tisdagen" token="tisdagen">
+<attr type="time" literal="den 15 mars" token="den 15 mars">
 Rfrån och med
 C1tisdagen
 Roch fram till
@@ -4479,6 +4542,7 @@ C1butiker
 Ri
 C2norska huvudstaden
 Pfrån och med tisdagen och fram till den 15 mars stänger serveringsställen och butiker i norska huvudstaden
+<attr type="time" span="från och med tisdagen och fram till den 15 mars">
 S <Det> kommer fler bilder under veckans gång som underlättar jakten på rätt plats.
 PR<det>
 Rkommer
@@ -4491,6 +4555,9 @@ Rpå
 C2rätt plats
 Pdet kommer fler bilder under veckans gång som underlättar jakten på rätt plats
 SPå fredag kommer lösningen tillsammans med en intervju med en kvinna som har arbetat i huset som var mer berömt under 1900-talet än i dag.
+<attr type="time" literal="fredag" token="fredag">
+<attr type="time" literal="1900-talet" token="1900-talet">
+<attr type="time" literal="i dag." token="i dag.">
 Rpå
 C1fredag
 Rkommer
@@ -4508,6 +4575,8 @@ C11900-talet
 Rän
 C2i dag
 Ppå fredag kommer lösningen tillsammans med intervju med kvinna som har arbetat i huset som var mer berömt under 1900-talet än i dag
+<attr type="time" span="på fredag">
+<attr type="time" span="under 1900-talet">
 SDatorerna tog till slut död på yrkesrollerna som dominerade <här> i huset.
 C1datorerna
 Rtog till
@@ -4521,6 +4590,7 @@ Ri
 C1huset
 Pdatorerna tog till slut död på yrkesrollerna som dominerade här i huset
 SEtt par från Östeuropa döms till fängelse för att <de> låtit <sin> 17-åriga svärdotter tigga utanför en livsmedelsbutik.
+<attr type="measurement" literal="17-åriga svärdotter" token="17-åriga" value="17" unit="åriga">
 C2ett par
 Rfrån
 C1östeuropa
@@ -4534,6 +4604,7 @@ C217-åriga svärdotter
 Rtigga utanför
 C1livsmedelsbutik
 Pett par från östeuropa döms till fängelse för att de låtit sin 17-åriga svärdotter tigga utanför livsmedelsbutik
+<attr type="measurement" span="17-åriga svärdotter">
 S <Det> är brottsligt att påverka så unga personer för att få <dem> att tigga, enligt domen i Göteborgs tingsrätt.
 PR<det>
 Rär
@@ -4549,6 +4620,7 @@ Ri
 C2göteborgs tingsrätt
 Pdet är brottsligt att påverka så unga personer för att få dem att tigga enligt domen i göteborgs tingsrätt
 SFlickan kom till Sverige från <sitt> hemland i januari, tillsammans med den jämnårige maken och svärföräldrarna.
+<attr type="time" literal="januari," token="januari,">
 C1flickan
 Rkom till
 C1sverige
@@ -4562,6 +4634,7 @@ C2jämnårige maken
 Roch
 C1svärföräldrarna
 Pflickan kom till sverige från sitt hemland i januari tillsammans med jämnårige maken och svärföräldrarna
+<attr type="time" span="i januari">
 SVärldscupfinalerna i dressyr och hoppning ska arrangeras som planerat.
 C1världscupfinalerna
 Ri
@@ -4577,16 +4650,22 @@ C2allvarliga virusutbrottet
 Ri
 C1valencia
 Psäkerheten höjs ytterligare på grund av allvarliga virusutbrottet i valencia
-STre dagar senare inleds världscupfinalerna (31 mars–4 april) i Scandinavium i Göteborg.
+STre dagar senare inleds världscupfinalerna (31 mars – 4 april) i Scandinavium i Göteborg.
+<attr type="time" literal="Tre dagar senare" token="Tre dagar senare">
+<attr type="time" literal="(31 mars" token="(31 mars">
+<attr type="time" literal="4 april)" token="4 april)">
 C3tre dagar senare
 Rinleds
 C1världscupfinalerna
-C331 mars-4 april
+C231 mars
+R-
+C24 april
 Ri
 C1scandinavium
 Ri
 C1göteborg
-Ptre dagar senare inleds världscupfinalerna 31 mars-4 april i scandinavium i göteborg
+Ptre dagar senare inleds världscupfinalerna 31 mars - 4 april i scandinavium i göteborg
+<attr type="time" span="31 mars - 4 april">
 SNigeria har fått <sin> första leverans av vaccin mot covid-19 inom ramarna för det globala programmet Covax.
 C1nigeria
 Rhar fått
@@ -4602,12 +4681,14 @@ Rför
 C3globala programmet covax
 Pnigeria har fått sin första leverans av vaccin mot covid-19 inom ramarna för globala programmet covax
 SDet folkrika landet har 200 miljoner invånare och fick inledningsvis 3,9 miljoner doser vaccin.
+<attr type="measurement" literal="3,9 miljoner doser vaccin." token="3,9 miljoner doser" value="3,9 miljoner" unit="doser">
 C2folkrika landet
 Rhar
 C3200 miljoner invånare
 Roch fick
 C43,9 miljoner doser vaccin
 Pfolkrika landet har 200 miljoner invånare och fick 3,9 miljoner doser vaccin
+<attr type="measurement" span="3,9 miljoner doser vaccin">
 SAntalet ledamöter i den nya enkammarriksdagen var 350, en jämnt delbart tal.
 C2antalet ledamöter
 Ri
@@ -4625,6 +4706,7 @@ Ruppstod
 C1dödläge
 Plotten fick avgöra när det uppstod dödläge
 SI Skåne har Postnord börjat dela ut brev – och tidningar – varannan dag.
+<attr type="time" literal="varannan dag." token="varannan dag.">
 Ri
 C1skåne
 Rhar
@@ -4636,6 +4718,7 @@ C1tidningar
 C2varannan dag
 Pi skåne har postnord börjat dela ut brev och tidningar varannan dag
 SPå bara några årtionden har <man> lyckats demolera det postväsende som tog hundratals år att konstruera.
+<attr type="time" literal="hundratals år" token="hundratals år">
 Rpå
 C2några årtionden
 Rhar
@@ -4726,7 +4809,9 @@ C1discovery+
 Rhandlar om
 PR<detta>
 Pglad att få berätta att mitt nya program på discovery+ handlar om detta
-SErfarenhet som visar sig sorgligt förrädisk i en tid där klimatförändringarna skapar extrema väderförhållanden och några smällkalla veckor ersätts av en onaturlig vårvärme som snabbt fräter sönder de decimetertjocka isarna, så hastigt att is som är hård och bärig på morgonen är sorbetmjuk sörja på eftermiddagen.
+SErfarenhet som visar sig sorgligt förrädisk i en tid där klimatförändringarna skapar extrema väderförhållanden och några smällkalla veckor ersätts av en onaturlig vårvärme som snabbt fräter sönder de decimetertjocka isarna, så hastigt att is som är hård och bärig på morgonen är sorbetmjuk sörja på eftermiddagen.
+<attr type="time" literal="på morgonen" token="på morgonen">
+<attr type="time" literal="på eftermiddagen." token="på eftermiddagen.">
 C1erfarenhet
 Rsom visar sig
 C2sorgligt förrädisk
@@ -4749,12 +4834,10 @@ Rsom är
 C1hård
 Roch
 C1bärig
-Rpå
-C1morgonen
+C2på morgonen
 Rär
 C2sorbetmjuk sörja
-Rpå
-C1eftermiddagen
+C2på eftermiddagen
 Perfarenhet som visar sig sorgligt förrädisk i tid där klimatförändringarna skapar extrema väderförhållanden och några smällkalla veckor ersätts av onaturlig vårvärme som snabbt fräter sönder decimetertjocka isarna så hastigt att is som är hård och bärig på morgonen är sorbetmjuk sörja på eftermiddagen
 SMän som har lärt sig att förstå, respektera och älska isen i en annan geologisk period, men dör när <de> beträder isarna i antropocen.
 C1män
@@ -4782,6 +4865,7 @@ Rpå
 C1soptippar
 Pi ryska novaja zemlja tvingas isbjörnarna gräva efter mat på soptippar
 SAnimationerna visar <allt> från organiska former till plastavfall, men <ofta> går <det> bara nästan att säga vad <det> är <vi> ser.
+<attr type="time" literal="ofta" token="ofta">
 C1animationerna
 Rvisar
 PR<allt>
@@ -4801,6 +4885,8 @@ PR<vi>
 Rser
 Panimationerna visar allt från organiska former till plastavfall men ofta går det nästan att säga vad det är vi ser
 SOrmbunksblad och andra växter är återkommande element: <ibland> som ett skuggspel där <de> liknar revbenen i en bröstkorg, <ibland> påminner <de> om ryggrader på någon förhistorisk livsform.
+<attr type="time" literal="ibland" token="ibland">
+<attr type="time" literal="ibland" token="ibland">
 C1ormbunksblad
 Roch
 C2andra växter
@@ -4838,6 +4924,7 @@ Roch
 C1varuhus
 Pfolkhälsomyndigheten föreslår maxtak för antal besökare på handelsplatser som butiker köpcentrum och varuhus
 SDe nya reglerna föreslås träda ikraft den 6 mars 2021.
+<attr type="time" literal="den 6 mars 2021." token="den 6 mars 2021.">
 C2nya reglerna
 Rföreslås träda ikraft
 C4den 6 mars 2021
@@ -4916,6 +5003,7 @@ Rutanför
 C1torhamn
 Ppolis ambulans och räddningstjänst har fått rycka ut till villa i sandhamn utanför torhamn
 SLarmet kom in klockan 11.18.
+<attr type="time" literal="klockan 11.18." token="klockan 11.18.">
 C1larmet
 Rkom in
 C2klockan 11.18
@@ -4925,10 +5013,12 @@ C1villan
 Rär
 C1övertänd
 Pvillan är övertänd
-S <Det> var i lördags som mannen från Karlskrona lade ett spel på Lotto med 13 rader plus Joker för 49 kronor.
+S <Det> var i lördags som mannen från Karlskrona lade ett spel på Lotto med 13 rader plus Joker för 49 kronor.
+<attr type="time" literal="i lördags" token="i lördags">
+<attr type="measurement" literal="49 kronor." token="49 kronor." value="49" unit="kronor">
 PR<det>
-Rvar i
-C1lördags
+Rvar
+C2i lördags
 Rsom
 C1mannen
 Rfrån
@@ -4944,9 +5034,9 @@ C1joker
 Rför
 C249 kronor
 Pdet var i lördags som mannen från karlskrona lade spel på lotto med 13 rader plus joker för 49 kronor
-SPå kvällen hade <han> ett missat samtal på telefonen och ett sms om att <han> kunde gå in och rätta <sina> Lottorader.
-Rpå
-C1kvällen
+SPå kvällen hade <han> ett missat samtal på telefonen och ett sms om att <han> kunde gå in och rätta <sina> Lottorader.
+<attr type="time" literal="På kvällen" token="På kvällen">
+C2på kvällen
 Rhade
 PR<han>
 C2missat samtal
@@ -4961,11 +5051,10 @@ Rkunde gå in och rätta
 PR<sina>
 C1lottorader
 Ppå kvällen hade han missat samtal på telefonen och sms om att han kunde gå in och rätta sina lottorader
-SRedan i slutet på 2016 påbörjades det förberedandet arbetet för att bygga Hisingsbron mellan Hisingen och fastlandet.
+SRedan i slutet på 2016 påbörjades det förberedandet arbetet för att bygga Hisingsbron mellan Hisingen och fastlandet.
+<attr type="time" literal="slutet på 2016" token="slutet på 2016">
 Ri
-C1slutet
-Rpå
-C12016
+C3slutet på 2016
 Rpåbörjades
 C2förberedandet arbetet
 Rför att bygga
@@ -4975,6 +5064,7 @@ C1hisingen
 Roch
 C1fastlandet
 Pi slutet på 2016 påbörjades förberedandet arbetet för att bygga hisingsbron mellan hisingen och fastlandet
+<attr type="time" span="i slutet på 2016">
 S– <Nu> är Hisingsbron så klar att <vi> kan öppna <den> för göteborgarna.
 <attr type="time" literal="Nu" token="Nu">
 PR<nu>
@@ -4989,6 +5079,7 @@ Rför
 C1göteborgarna
 Pnu är hisingsbron så klar att vi kan öppna den för göteborgarna
 S <Han> kommer att vara <vår> viktigaste spelare 2021.
+<attr type="time" literal="viktigaste spelare 2021." token="2021.">
 PR<han>
 Rkommer att vara
 PR<vår>
@@ -5013,14 +5104,17 @@ C2stor hjälp
 Rsa
 PR<han>
 Pjag är förhoppningsvis i mina bästa år och kan kanske vara till stor hjälp sa han
-S– <Någonstans> är <det> ju det här man går och väntar på hela vintern.
+S– <Någonstans> är <det> ju det här man går och väntar på hela vintern.
+<attr type="time" literal="hela vintern." token="hela vintern.">
 PR<någonstans>
 Rär
 PR<det>
 C1man
-Rgår och väntar på
+Rgår och väntar
+Rpå
 C2hela vintern
 Pnågonstans är det man går och väntar på hela vintern
+<attr type="time" span="på hela vintern">
 S <Man> har precis stängt ner laptopen efter att ha kollat på den sista omgången och <nu> ska <man> plocka upp <den> <igen.>
 <attr type="time" literal="nu" token="nu">
 <attr type="time" literal="igen." token="igen.">
@@ -5038,6 +5132,7 @@ PR<den>
 PR<igen>
 Pman har precis stängt ner laptopen efter att ha kollat på sista omgången och nu ska man plocka upp den igen
 SEn lastbil och en personbil krockade på E20 vid Olskroksmotet i Göteborg på tisdagseftermiddagen.
+<attr type="time" literal="tisdagseftermiddagen." token="tisdagseftermiddagen.">
 C1lastbil
 Roch
 C1personbil
@@ -5050,6 +5145,7 @@ C1göteborg
 Rpå
 C1tisdagseftermiddagen
 Plastbil och personbil krockade på e20 vid olskroksmotet i göteborg på tisdagseftermiddagen
+<attr type="time" span="på tisdagseftermiddagen">
 STvå filer fick stängas av i södergående riktning under räddningsarbetet.
 C2två filer
 Rfick stängas av i
@@ -5065,6 +5161,7 @@ Rförbi
 C1olycksplatsen
 Ptrafiken kunde rulla långsamt i tredje fil förbi olycksplatsen
 SStrax efter klockan 14.00 kunde räddningstjänsten avsluta <sin> insats på platsen.
+<attr type="time" literal="klockan 14.00" token="klockan 14.00">
 Rstrax efter
 C2klockan 14.00
 Rkunde
@@ -5075,7 +5172,9 @@ C1insats
 Rpå
 C1platsen
 Pstrax efter klockan 14.00 kunde räddningstjänsten avsluta sin insats på platsen
+<attr type="time" span="strax efter klockan 14.00">
 SAttacker riktade mot myndighetspersoner, journalister och aktivister har ökat dramatiskt de senaste månaderna i Afghanistan.
+<attr type="time" literal="senaste månaderna" token="senaste månaderna">
 C1attacker
 Rriktade mot
 C1myndighetspersoner
@@ -5093,6 +5192,7 @@ Rladdar för
 C1eldebatt
 Priksdagen laddar för eldebatt
 SRiksdagen ordnar en särskild debatt om den svenska elförsörjningen den 5 mars.
+<attr type="time" literal="den 5 mars." token="den 5 mars.">
 C1riksdagen
 Rordnar
 C2särskild debatt
@@ -5126,6 +5226,7 @@ Rav
 C1medaljkandidater
 Pstarka svenska sprintlaget på damsidan var fyllt av medaljkandidater
 SMen 26-åringen hade krafter kvar och gjorde ett guldryck precis inför upploppet.
+<attr type="measurement" literal="26-åringen" token="26-åringen" value="26" unit="åringen">
 C126-åringen
 Rhade
 C1krafter
@@ -5135,6 +5236,7 @@ Rprecis inför
 C1upploppet
 P26-åringen hade krafter kvar och gjorde guldryck precis inför upploppet
 SMen 21-åringen slog på tävlingsskallen, fick en ny stav och krigade sig tillbaka i loppet.
+<attr type="measurement" literal="21-åringen" token="21-åringen" value="21" unit="åringen">
 C121-åringen
 Rslog på
 C1tävlingsskallen
@@ -5168,6 +5270,7 @@ Rär
 C1polisanmäld
 Phändelsen är polisanmäld
 SKommunen har beställt nya lekredskap men <det> kommer att dröja minst sex veckor innan <de> kan komma på plats.
+<attr type="time" literal="minst sex veckor" token="minst sex veckor">
 C1kommunen
 Rhar beställt
 C2nya lekredskap
@@ -5231,6 +5334,7 @@ Rsäger
 PR<hon>
 Pdet kunde ha varit hon som drabbats det är väldigt jobbigt att tänka på säger hon
 SEn man i 20-årsåldern gick till attack mot sju personer i centrala Vetlanda – och sköts <senare> av polis.
+<attr type="measurement" literal="20-årsåldern" token="20-årsåldern" value="20" unit="årsåldern">
 <attr type="time" literal="senare" token="senare">
 C1man
 Ri
@@ -5272,12 +5376,14 @@ Rmisstänkts för
 C2mindre brott
 Phan är känd hos polisen då han tidigare misstänkts för mindre brott
 SNärmare 60 procent av alla våldtäktsmän hade utländsk bakgrund.
+<attr type="measurement" literal="Närmare 60 procent" token="Närmare 60 procent" value="närmare 60" unit="procent">
 C3närmare 60 procent
 Rav
 C2alla våldtäktsmän
 Rhade
 C2utländsk bakgrund
 Pnärmare 60 procent av alla våldtäktsmän hade utländsk bakgrund
+<attr type="measurement" span="närmare 60 procent av alla våldtäktsmän">
 S <Det> visar en ny omfattande svensk studie.
 PR<det>
 Rvisar
@@ -5295,6 +5401,7 @@ Rinte svara på
 Pvarför invandrare är överrepresenterade kan forskarna inte svara på
 <attr type="negation" span="kan forskarna inte svara på">
 S <Den> har tittat närmare på 3 039 personer som dömts för våldtäkt i Sverige under perioden 2000–2015.
+<attr type="time" literal="perioden 2000–2015." token="2000–2015.">
 PR<den>
 Rhar tittat närmare på
 C33 039 personer
@@ -5305,7 +5412,8 @@ C1sverige
 Runder
 C2perioden 2000-2015
 Pden har tittat närmare på 3 039 personer som dömts för våldtäkt i sverige under perioden 2000-2015
-SDessutom breddas delar av E6 och E22 för att skapa tre körfält i vardera riktningen.
+S <Dessutom> breddas delar av E6 och E22 för att skapa tre körfält i vardera riktningen.
+PR<dessutom>
 Rbreddas
 C1delar
 Rav
@@ -5316,8 +5424,9 @@ Rför att skapa
 C2tre körfält
 Ri
 C2vardera riktningen
-Pbreddas delar av e6 och e22 för att skapa tre körfält i vardera riktningen
+Pdessutom breddas delar av e6 och e22 för att skapa tre körfält i vardera riktningen
 S <Det> framgår av Trafikverkets nya genomförandeplan för åren fram till 2028.
+<attr type="time" literal="2028." token="2028.">
 PR<det>
 Rframgår av
 C3trafikverkets nya genomförandeplan
@@ -5326,6 +5435,7 @@ C1åren
 Rfram till
 C12028
 Pdet framgår av trafikverkets nya genomförandeplan för åren fram till 2028
+<attr type="time" span="fram till 2028">
 SSamtidigt som utbyggnaden av Sveriges järnvägar drar ut på tiden moderniseras det svenska vägnätet i snabb takt.
 Rsamtidigt som
 C1utbyggnaden
@@ -5338,14 +5448,15 @@ C2svenska vägnätet
 Ri
 C2snabb takt
 Psamtidigt som utbyggnaden av sveriges järnvägar drar ut på tiden moderniseras svenska vägnätet i snabb takt
-SInte minst längs Europavägarna.
+S <Inte minst> längs Europavägarna.
+PR<inte minst>
 Rlängs
 C1europavägarna
-Plängs europavägarna
-SEn hemmafest med över hundra deltagare i Åre kommer att polisanmälas för brott mot pandemilagen.
+Pinte minst längs europavägarna
+SEn hemmafest med över hundra deltagare i Åre kommer att polisanmälas för brott mot pandemilagen.
 C1hemmafest
-Rmed över
-C2hundra deltagare
+Rmed
+C3över hundra deltagare
 Ri
 C1åre
 Rkommer att polisanmälas för
@@ -5366,21 +5477,6 @@ C1lugnt
 Rmen
 C2mycket folk
 Pdet var lugnt men mycket folk
-SFör första gången på fyra månader kan <hon> <nu> träffa <sin> dotter <igen.>
-<attr type="time" literal="nu" token="nu">
-<attr type="time" literal="igen." token="igen.">
-Rför
-C2första gången
-Rpå
-C2fyra månader
-Rkan
-PR<hon>
-PR<nu>
-Rträffa
-PR<sin>
-C1dotter
-PR<igen>
-Pför första gången på fyra månader kan hon nu träffa sin dotter igen
 SFast kramen får vänta.
 Rfast
 C1kramen
@@ -5414,6 +5510,7 @@ C1uttalande
 Pstorbritanniens prins philip 99 har genomgått hjärtkirurgi uppger buckingham palace i uttalande
 SOperationen ska ha gått bra, och prinsen – drottningen Elizabeths make – ska <nu> återhämta sig på sjukhus i ”några dagar”.
 <attr type="time" literal="nu" token="nu">
+<attr type="time" literal="”några dagar”." token="”några dagar”.">
 C1operationen
 Rska ha gått bra
 Roch
@@ -5426,7 +5523,9 @@ C1sjukhus
 Ri
 C2några dagar
 Poperationen ska ha gått bra och prinsen drottningen elizabeths make ska nu återhämta sig på sjukhus i några dagar
+<attr type="time" span="i några dagar">
 SPhilip har legat på sjukhus i drygt två veckor och flyttades <nyligen> till en hjärtklinik.
+<attr type="time" literal="drygt två veckor" token="drygt två veckor">
 <attr type="time" literal="nyligen" token="nyligen">
 C1philip
 Rhar legat på
@@ -5438,7 +5537,9 @@ PR<nyligen>
 Rtill
 C1hjärtklinik
 Pphilip har legat på sjukhus i drygt två veckor och flyttades nyligen till hjärtklinik
+<attr type="time" span="i drygt två veckor">
 S2011 genomgick <han> en bypass-operation.
+<attr type="time" literal="2011" token="2011">
 C12011
 Rgenomgick
 PR<han>
@@ -5520,7 +5621,7 @@ PR<din>
 C1partner
 Rträffades
 Phar du intressant historia om hur du och din partner träffades
-S <Det här> är <din> chans att dela <den> med våra läsare.
+S <Det här> är <din> chans att dela <den> med <våra> läsare.
 PR<det här>
 Rär
 PR<din>
@@ -5528,8 +5629,9 @@ C1chans
 Ratt dela
 PR<den>
 Rmed
+PR<våra>
 C1läsare
-Pdet här är din chans att dela den med läsare
+Pdet här är din chans att dela den med våra läsare
 SKanske möttes <ni> i lunchkön, eller på skidsemestern?
 Rkanske möttes
 PR<ni>
@@ -5548,6 +5650,7 @@ PR<ni>
 C1grannar
 Pträffades ni på jobbet eller var ni grannar
 S <Det> är idag ett år sedan Skåne fick <sitt> första konstaterade fall av covid-19.
+<attr type="time" literal="idag" token="idag">
 PR<det>
 Rär
 C1idag
@@ -5652,6 +5755,7 @@ Rpå
 C1lönesidan
 Psamtidigt väntar krav på mer öppenhet och jämställdhet på lönesidan
 SFyra 16-åriga pojkar dog när bilen <de> åkte i körde av vägen utanför Sörfors, sydväst om Sundsvall.
+<attr type="measurement" literal="Fyra 16-åriga pojkar" token="16-åriga" value="16" unit="åriga">
 C3fyra 16-åriga pojkar
 Rdog
 Rnär
@@ -5664,8 +5768,11 @@ C1sörfors
 Rsydväst om
 C1sundsvall
 Pfyra 16-åriga pojkar dog när bilen de åkte i körde av vägen utanför sörfors sydväst om sundsvall
+<attr type="measurement" span="fyra 16-åriga pojkar">
 S <Nu> döms 19-åringen som körde till skyddstillsyn och fängelse i två månader.
 <attr type="time" literal="Nu" token="Nu">
+<attr type="measurement" literal="19-åringen" token="19-åringen" value="19" unit="åringen">
+<attr type="time" literal="två månader." token="två månader.">
 PR<nu>
 Rdöms
 C119-åringen
@@ -5676,6 +5783,7 @@ C1fängelse
 Ri
 C2två månader
 Pnu döms 19-åringen som körde till skyddstillsyn och fängelse i två månader
+<attr type="time" span="i två månader">
 S– <Det> är en brand i en större lagerlokal.
 PR<det>
 Rär
@@ -5721,11 +5829,13 @@ C3synnerligen grova brott
 Renligt
 C1åklagarna
 Pi flera fall handlar det om synnerligen grova brott enligt åklagarna
-SRyssarna kände till mongolernas härjningar och på 1220-talet gick <de> ihop med turkfolk som redan attackerats.
+SRyssarna kände till mongolernas härjningar och på 1220-talet gick <de> ihop med turkfolk som redan attackerats.
+<attr type="time" literal="1220-talet" token="1220-talet">
 C1ryssarna
 Rkände till
 C2mongolernas härjningar
-Roch på
+Roch
+Rpå
 C11220-talet
 Rgick
 PR<de>
@@ -5733,6 +5843,7 @@ Rihop med
 C1turkfolk
 Rsom attackerats
 Pryssarna kände till mongolernas härjningar och på 1220-talet gick de ihop med turkfolk som attackerats
+<attr type="time" span="på 1220-talet">
 SMen den nya alliansen rådde inte på mongolerna.
 <attr type="negation" literal="rådde inte på" token="inte">
 C2nya alliansen
@@ -5741,6 +5852,8 @@ C1mongolerna
 Pnya alliansen rådde inte på mongolerna
 <attr type="negation" span="nya alliansen rådde inte på mongolerna">
 SRaketen är den tredje som skjuts upp, efter två snarlika försök i februari och i december i fjol.
+<attr type="time" literal="februari" token="februari">
+<attr type="time" literal="december i fjol." token="december i fjol.">
 C1raketen
 Rär
 C1tredje
@@ -5752,6 +5865,7 @@ C1februari
 Roch i
 C3december i fjol
 Praketen är tredje som skjuts upp efter två snarlika försök i februari och i december i fjol
+<attr type="time" span="i februari och i december i fjol">
 SMänniskor som glidit igenom maskorna i folkhemmets skyddsnät.
 C1människor
 Rsom glidit igenom
@@ -5769,6 +5883,7 @@ Rär
 C1ansvaret
 Pvems är ansvaret
 SVarje torsdag förmiddag upprättas en kö utanför kaféet i Clara kyrka, där en juristbyrå erbjuder rådgivning för människor som inte har möjlighet att få sådan hjälp på annat sätt.
+<attr type="time" literal="Varje torsdag förmiddag" token="Varje torsdag förmiddag">
 <attr type="negation" literal="som inte har" token="inte">
 C3varje torsdag förmiddag
 Rupprättas
@@ -5792,6 +5907,7 @@ C2annat sätt
 Pvarje torsdag förmiddag upprättas kö utanför kaféet i clara kyrka där juristbyrå erbjuder rådgivning för människor som inte har möjlighet att få hjälp på annat sätt
 <attr type="negation" span="som inte har möjlighet att få hjälp på annat sätt">
 SH har levt som papperslös i Sverige i mer än tre år och gömmer sig för polisen.
+<attr type="time" literal="mer än tre år" token="mer än tre år">
 C1h
 Rhar levt som
 C1papperslös
@@ -5802,11 +5918,15 @@ C4mer än tre år
 Roch gömmer sig för
 C1polisen
 Ph har levt som papperslös i sverige i mer än tre år och gömmer sig för polisen
-S <Vi> har sms:at i en dryg vecka.
+<attr type="time" span="i mer än tre år">
+S <Vi> har sms:at i en dryg vecka.
+<attr type="time" literal="dryg vecka." token="dryg vecka.">
 PR<vi>
-Rhar sms:at i
+Rhar sms:at
+Ri
 C2dryg vecka
 Pvi har sms:at i dryg vecka
+<attr type="time" span="i dryg vecka">
 S <Hon> ville ha <det> så eftersom <hon> skrev att <hon> inte är så bra på svenska.
 <attr type="negation" literal="inte är" token="inte">
 PR<hon>
@@ -5823,10 +5943,9 @@ Rpå
 C1svenska
 Phon ville ha det eftersom hon skrev att hon inte är så bra på svenska
 <attr type="negation" span="att hon inte är så bra på svenska">
-SEn kväll i veckan läggs madrasser i altargången och de människor <man> bedömer har störst behov får mat och möjlighet att sova en natt på rena lakan.
-C1kväll
-Ri
-C1veckan
+SEn kväll i veckan läggs madrasser i altargången och de människor <man> bedömer har störst behov får mat och möjlighet att sova en natt på rena lakan.
+<attr type="time" literal="En kväll i veckan" token="En kväll i veckan">
+C4en kväll i veckan
 Rläggs
 C1madrasser
 Ri
@@ -5845,13 +5964,15 @@ Ratt sova
 C1natt
 Rpå
 C2rena lakan
-Pkväll i veckan läggs madrasser i altargången och människor man bedömer har störst behov får mat och möjlighet att sova natt på rena lakan
+Pen kväll i veckan läggs madrasser i altargången och människor man bedömer har störst behov får mat och möjlighet att sova natt på rena lakan
 SEtt gigantiskt askmoln sprider sig över Indonesiska Sumatra.
 C2gigantiskt askmoln
 Rsprider sig över
 C2indonesiska sumatra
 Pgigantiskt askmoln sprider sig över indonesiska sumatra
-SAskmolnet är omkring 5000 meter högt och kommer från vulkanen Sinabung som har fått ett utbrott som startade på tisdagsmorgonen.
+SAskmolnet är omkring 5000 meter högt och kommer från vulkanen Sinabung som har fått ett utbrott som startade på tisdagsmorgonen.
+<attr type="measurement" literal="omkring 5000 meter högt" token="omkring 5000 meter högt" value="omkring 5000" unit="meter högt">
+<attr type="time" literal="tisdagsmorgonen." token="tisdagsmorgonen.">
 C1askmolnet
 Rär
 C4omkring 5000 meter högt
@@ -5859,10 +5980,13 @@ Roch kommer från
 C2vulkanen sinabung
 Rsom har fått
 C1utbrott
-Rsom startade på
+Rsom startade
+Rpå
 C1tisdagsmorgonen
 Paskmolnet är omkring 5000 meter högt och kommer från vulkanen sinabung som har fått utbrott som startade på tisdagsmorgonen
+<attr type="time" span="på tisdagsmorgonen">
 SÅrets horoskop för 2021 går i frihetens och förändringens tecken.
+<attr type="time" literal="2021" token="2021">
 C2årets horoskop
 Rför
 C12021
@@ -5902,6 +6026,7 @@ Rför
 C2första gången
 Pnytt läkemedel mot corona har använts av svensk patient för första gången
 SPå lördag är <det> ett år sedan det första fallet av covid-19 konstaterades i Stockholm.
+<attr type="time" literal="lördag" token="lördag">
 Rpå
 C1lördag
 Rär
@@ -5914,6 +6039,7 @@ C1covid-19
 Rkonstaterades i
 C1stockholm
 Ppå lördag är det år sedan första fallet av covid-19 konstaterades i stockholm
+<attr type="time" span="på lördag">
 SRegion Stockholm inför fler åtgärder för att minska smittspridningen.
 C2region stockholm
 Rinför
@@ -5921,15 +6047,18 @@ C2fler åtgärder
 Rför att minska
 C1smittspridningen
 Pregion stockholm inför fler åtgärder för att minska smittspridningen
-S <Det> framgår i information från regionen som skickades ut under tisdagsförmiddagen.
+S <Det> framgår i information från regionen som skickades ut under tisdagsförmiddagen.
+<attr type="time" literal="tisdagsförmiddagen." token="tisdagsförmiddagen.">
 PR<det>
 Rframgår i
 C1information
 Rfrån
 C1regionen
-Rsom skickades ut under
+Rsom skickades ut
+Runder
 C1tisdagsförmiddagen
 Pdet framgår i information från regionen som skickades ut under tisdagsförmiddagen
+<attr type="time" span="under tisdagsförmiddagen">
 SFör att inga missförstånd ska ske - dissolvingmassa, ämnet som framställs av löv- och barrträd, som textilfibrer som exempelvis viskos kan tillverkas av tas redan fram på vissa håll i Sverige.
 <attr type="negation" literal="inga missförstånd" token="inga">
 Rför att
@@ -5966,14 +6095,15 @@ C1samarbete
 Rkan driva fram
 C1teknikgenombrott
 Pvårt projekt är perfekt exempel på hur samarbete kan driva fram teknikgenombrott
-SPerseverance landade på Mars i torsdags.
+SPerseverance landade på Mars i torsdags.
+<attr type="time" literal="i torsdags." token="i torsdags.">
 C1perseverance
 Rlandade på
 C1mars
-Ri
-C1torsdags
+C2i torsdags
 Pperseverance landade på mars i torsdags
 SBekräftelsen på den lyckade landningen kom 11 minuter senare – <det> är så länge <det> tar för en radiosignal att nå Jorden från Mars.
+<attr type="time" literal="11 minuter senare" token="11 minuter senare">
 C1bekräftelsen
 Rpå
 C2lyckade landningen
@@ -6105,6 +6235,7 @@ Rvar
 C1tjej
 Pför att hon var tjej
 SEfter att ha spelat fotboll i smyg startade <hon> som 13-åring ett eget lag.
+<attr type="measurement" literal="13-åring" token="13-åring" value="13" unit="åring">
 Refter att ha spelat
 C1fotboll
 Ri
@@ -6116,6 +6247,7 @@ C113-åring
 C2eget lag
 Pefter att ha spelat fotboll i smyg startade hon som 13-åring eget lag
 SAtt ge sig ut på isen i vintertid kan vara förknippat med fara.
+<attr type="time" literal="vintertid" token="vintertid">
 Ratt ge sig ut på
 C1isen
 Ri
@@ -6125,6 +6257,7 @@ C1förknippat
 Rmed
 C1fara
 Patt ge sig ut på isen i vintertid kan vara förknippat med fara
+<attr type="time" span="i vintertid">
 S <Här> är fem steg för en trygg och lyckad räddning ur en isvak.
 PR<här>
 Rär
@@ -6137,6 +6270,7 @@ Rur
 C1isvak
 Phär är fem steg för trygg och lyckad räddning ur isvak
 S <Det> blev klart under onsdagen efter att alla fyra semifinallagen vunnit <sina> kvartsfinaler i två raka matcher.
+<attr type="time" literal="onsdagen" token="onsdagen">
 PR<det>
 Rblev
 C1klart
@@ -6151,6 +6285,7 @@ C1kvartsfinaler
 Ri
 C3två raka matcher
 Pdet blev klart under onsdagen efter att alla fyra semifinallagen vunnit sina kvartsfinaler i två raka matcher
+<attr type="time" span="under onsdagen efter att alla fyra semifinallagen vunnit sina kvartsfinaler i två raka matcher">
 S <Alla> ska följa det här loppet, säger <hon> inför stafetten.
 PR<alla>
 Rska följa
@@ -6160,12 +6295,12 @@ PR<hon>
 Rinför
 C1stafetten
 Palla ska följa loppet säger hon inför stafetten
-SMen när klockan slår 13.15 i dag tänker till och med <hon> bänka sig framför tv:n.
+SMen när klockan slår 13.15 i dag tänker till och med <hon> bänka sig framför tv:n.
+<attr type="time" literal="13.15 i dag" token="13.15 i dag">
 Rnär
 C1klockan
 Rslår
-C113.15
-C2i dag
+C313.15 i dag
 Rtänker till och med
 PR<hon>
 Rbänka sig framför
@@ -6277,26 +6412,29 @@ PR<de>
 Rserverar
 C3riktigt bra snabbmat
 Pställe för snabbmat och de serverar riktigt bra snabbmat
-SDessutom extremt generöst med vitlöksbröd, vilket egentligen var en slags pizza i sig.
+S <Dessutom> extremt generöst med vitlöksbröd, vilket egentligen var en slags pizza i sig.
+PR<dessutom>
 C2extremt generöst
 Rmed
 C1vitlöksbröd
 Rvilket var
 C3en slags pizza
-Pextremt generöst med vitlöksbröd vilket var en slags pizza
-SPerfekt för hela familjen efter en dag på stranden om <du> är hungrig.
+Pdessutom extremt generöst med vitlöksbröd vilket var en slags pizza
+SPerfekt för hela familjen efter en dag på stranden om <du> är hungrig.
+<attr type="time" literal="en dag" token="en dag">
 C1perfekt
 Rför
 C2hela familjen
 Refter
-C1dag
+C2en dag
 Rpå
 C1stranden
 Rom
 PR<du>
 Rär
 C1hungrig
-Pperfekt för hela familjen efter dag på stranden om du är hungrig
+Pperfekt för hela familjen efter en dag på stranden om du är hungrig
+<attr type="time" span="efter en dag">
 SOkej service, var snabba o alerta, men inte ett leende.
 <attr type="negation" literal="men inte" token="inte">
 C2okej service
@@ -6339,25 +6477,13 @@ Rsom åt
 C1lunch
 PR<här>
 Pvi var sällskap på åtta personer vuxna och ungdomar som åt lunch här
-SDe två kvällar i början av september 2019 som <vi> besökte restaurangen var mycket uppskattade.
-C2två kvällar
-Ri
-C1början
-Rav
-C2september 2019
-Rsom
-PR<vi>
-Rbesökte
-C1restaurangen
-Rvar
-C2mycket uppskattade
-Ptvå kvällar i början av september 2019 som vi besökte restaurangen var mycket uppskattade
-STyvärr skymdes <den> av några byggnader.
+S <Tyvärr> skymdes <den> av några byggnader.
+PR<tyvärr>
 Rskymdes
 PR<den>
 Rav
 C2några byggnader
-Pskymdes den av några byggnader
+Ptyvärr skymdes den av några byggnader
 SBaren påminde om en strandbar på Kuba.
 C1baren
 Rpåminde om
@@ -6580,6 +6706,7 @@ C3annars mysig omgivning
 SBästa svenska husmanskosten.
 C3bästa svenska husmanskosten
 SKöper <alltid> två rätter att ta med, eftersom <jag> bort närheten.
+<attr type="time" literal="alltid" token="alltid">
 Rköper
 PR<alltid>
 C2två rätter
@@ -6760,15 +6887,6 @@ SVilken upplevelse!
 Rvilken
 C1upplevelse
 Pvilken upplevelse
-SBarnen 10 & 12 år tyckte <det> var läskigt och så bra!
-C5barnen 10 & 12 år
-Rtyckte
-PR<det>
-Rvar
-C1läskigt
-Roch
-C2så bra
-Pbarnen 10 & 12 år tyckte det var läskigt och så bra
 SOckså <vi> vuxna njöt av både historierna och spänningen.
 PR<vi>
 C1vuxna
@@ -6836,20 +6954,23 @@ C1skum
 Ri
 C2annat hotelrum
 Phade timmes privat spa men det var badkar med skum i annat hotelrum
-SÄndå betalade <vi> extra för <det.>
+S <Ändå> betalade <vi> extra för <det.>
+PR<ändå>
 Rbetalade
 PR<vi>
 C1extra
 Rför
 PR<det>
-Pbetalade vi extra för det
+Pändå betalade vi extra för det
 SFinns billigare och bättre hotel.
 Rfinns
 C1billigare
 Roch
 C2bättre hotel
 Pfinns billigare och bättre hotel
-SRedan när <jag> kom in i rummet tyckte <jag> att <det> luktade illa och doften av avlopp bara växte under natten för att riktigt stinka på morgonen.
+SRedan när <jag> kom in i rummet tyckte <jag> att <det> luktade illa och doften av avlopp bara växte under natten för att riktigt stinka på morgonen.
+<attr type="time" literal="natten" token="natten">
+<attr type="time" literal="på morgonen." token="på morgonen.">
 Rnär
 PR<jag>
 Rkom in i
@@ -6862,11 +6983,13 @@ Rluktade illa och
 C1doften
 Rav
 C1avlopp
-Rväxte under
+Rväxte
+Runder
 C1natten
-Rför att riktigt stinka på
-C1morgonen
+Rför att riktigt stinka
+C2på morgonen
 Pnär jag kom in i rummet tyckte jag att det luktade illa och doften av avlopp växte under natten för att riktigt stinka på morgonen
+<attr type="time" span="under natten">
 SNär <jag> under ett möte berättade <detta> för en kollega hade <hon> varit med om <samma> sak.
 Rnär
 PR<jag>
@@ -7022,26 +7145,27 @@ SEn helt fantastisk byggnad att se på och inspektera.
 C3helt fantastisk byggnad
 Ratt se på och inspektera
 Phelt fantastisk byggnad att se på och inspektera
-SHar röstats fram till Sveriges vackraste byggnad i början av 2000-talet.
+SHar röstats fram till Sveriges vackraste byggnad i början av 2000-talet.
+<attr type="time" literal="början av 2000-talet." token="början av 2000-talet.">
 Rhar röstats fram till
 C3sveriges vackraste byggnad
 Ri
-C1början
-Rav
-C12000-talet
+C3början av 2000-talet
 Phar röstats fram till sveriges vackraste byggnad i början av 2000-talet
-S <Det> låg en mil från flygplatsen men <det> gjorde <inget.>
+<attr type="time" span="i början av 2000-talet">
+S <Det> låg en mil från flygplatsen men <det> gjorde <inget.>
+<attr type="measurement" literal="en mil" token="en mil" value="en" unit="mil">
 <attr type="negation" literal="inget." token="inget.">
 PR<det>
 Rlåg
-C1mil
+C2en mil
 Rfrån
 C1flygplatsen
 Rmen
 PR<det>
 Rgjorde
 PR<inget>
-Pdet låg mil från flygplatsen men det gjorde inget
+Pdet låg en mil från flygplatsen men det gjorde inget
 SÄgaren var mycket trevlig vid ankomst, där <han> informerade vad som fick lov att användas.
 C1ägaren
 Rvar
@@ -7164,7 +7288,8 @@ C3flera vedeldade bastu
 Rvarav
 C1flytande
 Pdet fanns flera vedeldade bastu varav flytande
-SEn sparkstötting eller spark är ett mindre fordon, en slags kälke eller släde med medar, som har använts sedan mitten av 1800-talet, främst i Norden.
+SEn sparkstötting eller spark är ett mindre fordon, en slags kälke eller släde med medar, som har använts sedan mitten av 1800-talet, främst i Norden.
+<attr type="time" literal="mitten av 1800-talet," token="mitten av 1800-talet,">
 C1sparkstötting
 Reller
 C1spark
@@ -7175,14 +7300,15 @@ Reller
 C1släde
 Rmed
 C1medar
-Rsom har använts sedan
-C1mitten
-Rav
-C11800-talet
+Rsom har använts
+Rsedan
+C3mitten av 1800-talet
 Ri
 C1norden
 Psparkstötting eller spark är mindre fordon en slags kälke eller släde med medar som har använts sedan mitten av 1800-talet i norden
+<attr type="time" span="sedan mitten av 1800-talet">
 SSparkstöttingens nedre del består av två medar, <vanligtvis> i stål, som hålls samman längst fram med en stång.
+<attr type="time" literal="vanligtvis" token="vanligtvis">
 C3sparkstöttingens nedre del
 Rbestår av
 C2två medar
@@ -7215,6 +7341,7 @@ Rpå
 C2isbelagda sjöar
 Pdet är användbart vid isfiske på isbelagda sjöar
 SSpark används <ofta> i Norge, Sverige, Finland och Island, i mer sällsynta fall även i Kanada, Förenta Staterna, Ryssland och Danmark.
+<attr type="time" literal="ofta" token="ofta">
 C1spark
 Ranvänds
 PR<ofta>
@@ -7278,6 +7405,7 @@ C1gästgivargårdarna
 Pbegreppet var ursprungligen sammanfattande benämning på enkel och billig mat som åts på landet och härrör från att man skiljde på priser till herrskap och tjänstefolk vid gästgivargårdarna
 S <Numera> betecknar svensk husmanskost <vanligen> traditionell svensk mat som har lågt inköpspris, med stort mättnadsvärde eller med andra ord klassisk vardagsmat.
 <attr type="time" literal="Numera" token="Numera">
+<attr type="time" literal="vanligen" token="vanligen">
 PR<numera>
 Rbetecknar
 C2svensk husmanskost
@@ -7343,7 +7471,8 @@ C1husmanskosten
 Rmed
 C2lokala viner
 Pi av länderna och regionerna där vinodling förekommit finns tradition att kombinera husmanskosten med lokala viner
-SEn svensk klassiker, även kallat klassikern, kallas kombinationen av fyra stora svenska långlopp och har funnits sedan 1972.
+SEn svensk klassiker, även kallat klassikern, kallas kombinationen av fyra stora svenska långlopp och har funnits sedan 1972.
+<attr type="time" literal="1972." token="1972.">
 C2svensk klassiker
 Rkallat
 C1klassikern
@@ -7351,21 +7480,11 @@ Rkallas
 C1kombinationen
 Rav
 C4fyra stora svenska långlopp
-Roch har funnits sedan
+Roch har funnits
+Rsedan
 C11972
 Psvensk klassiker kallat klassikern kallas kombinationen av fyra stora svenska långlopp och har funnits sedan 1972
-SFör att få diplomet behöver <man> fullfölja fyra långlopp under en period av 12 månader.
-Rför att få
-C1diplomet
-Rbehöver
-PR<man>
-Rfullfölja
-C2fyra långlopp
-Runder
-C1period
-Rav
-C212 månader
-Pför att få diplomet behöver man fullfölja fyra långlopp under period av 12 månader
+<attr type="time" span="sedan 1972">
 SMer än 32 000 personer (varav 6 000 är kvinnor) kan titulera sig "en svensk klassiker".
 C5mer än 32 000 personer
 Rvarav
@@ -7376,13 +7495,17 @@ Rkan titulera sig
 C2svensk klassiker
 Pmer än 32 000 personer varav 6 000 är kvinnor kan titulera sig svensk klassiker
 SSedan 2006 finns även halvklassikern (klassikerhalvan 2006-2010).
+<attr type="time" literal="2006" token="2006">
+<attr type="time" literal="(klassikerhalvan 2006-2010)." token="2006-2010).">
 Rsedan
 C12006
 Rfinns
 C1halvklassikern
 C2klassikerhalvan 2006-2010
 Psedan 2006 finns halvklassikern klassikerhalvan 2006-2010
+<attr type="time" span="sedan 2006">
 SÅr 1977 tilläts för första gången även kvinnor att ta klassikern.
+<attr type="time" literal="År 1977" token="År 1977">
 C2år 1977
 Rtilläts för
 C2första gången
@@ -7391,6 +7514,7 @@ Ratt ta
 C1klassikern
 Pår 1977 tilläts för första gången kvinnor att ta klassikern
 S <Detta> genom att införa Engelbrektsloppet 60 km som skidlopp för kvinnor.
+<attr type="measurement" literal="Engelbrektsloppet 60 km" token="60 km" value="60" unit="km">
 PR<detta>
 Rgenom att införa
 C3engelbrektsloppet 60 km
@@ -7400,6 +7524,7 @@ Rför
 C1kvinnor
 Pdetta genom att införa engelbrektsloppet 60 km som skidlopp för kvinnor
 SSträckan för kvinnor i Lidingöloppet var 16 km.
+<attr type="measurement" literal="16 km." token="16 km." value="16" unit="km">
 C1sträckan
 Rför
 C1kvinnor
@@ -7409,6 +7534,7 @@ Rvar
 C216 km
 Psträckan för kvinnor i lidingöloppet var 16 km
 SÅr 1979 startade Öppet spår, som börjar gälla som prov för diplomet både för kvinnor och män.
+<attr type="time" literal="År 1979" token="År 1979">
 C2år 1979
 Rstartade
 C2öppet spår
@@ -7422,6 +7548,8 @@ Roch
 C1män
 Pår 1979 startade öppet spår som börjar gälla som prov för diplomet för kvinnor och män
 SVasaloppet är ett årligt långlopp på skidor som körs första söndagen i mars.
+<attr type="time" literal="första söndagen" token="första söndagen">
+<attr type="time" literal="mars." token="mars.">
 C1vasaloppet
 Rär
 C2årligt långlopp
@@ -7432,7 +7560,9 @@ C2första söndagen
 Ri
 C1mars
 Pvasaloppet är årligt långlopp på skidor som körs första söndagen i mars
+<attr type="time" span="första söndagen i mars">
 SSträckan är 90 kilometer och går från Berga by i Sälen till Mora i Dalarna i Sverige.
+<attr type="measurement" literal="90 kilometer" token="90 kilometer" value="90" unit="kilometer">
 C1sträckan
 Rär
 C290 kilometer
@@ -7459,6 +7589,8 @@ Rsett till
 C2antalet anmälda
 Pdet är äldsta och största långloppet i världen sett till antalet anmälda
 SDen första tävlingen kördes 1922 och <det> har varit en del av Worldloppet sedan 1979.
+<attr type="time" literal="1922" token="1922">
+<attr type="time" literal="1979." token="1979.">
 C2första tävlingen
 Rkördes
 C11922
@@ -7471,7 +7603,9 @@ C1worldloppet
 Rsedan
 C11979
 Pförsta tävlingen kördes 1922 och det har varit del av worldloppet sedan 1979
+<attr type="time" span="sedan 1979">
 SI den 80:e upplagan som hölls den 7 mars 2004 kom cirka 15 500 skidåkare till start.
+<attr type="time" literal="den 7 mars 2004" token="den 7 mars 2004">
 Ri
 C280:e upplagan
 Rsom hölls
@@ -7507,83 +7641,17 @@ C1segrande
 Ri
 C2respektive tävling
 Pperson hänger segerkrans kring halsen på segrande i respektive tävling
-SFettisdagen är den tredje av de tre dagarna i fastlagen, dagarna före fastan, där den första är fastlagssöndagen och <den andra> är blåmåndagen.
-C1fettisdagen
-Rär
-C1tredje
-Rav
-C2tre dagarna
-Ri
-C1fastlagen
-C1dagarna
-Rföre
-C1fastan
-Rdär
-C1första
-Rär
-C1fastlagssöndagen
-Roch
-PR<den andra>
-Rär
-C1blåmåndagen
-Pfettisdagen är tredje av tre dagarna i fastlagen dagarna före fastan där första är fastlagssöndagen och den andra är blåmåndagen
-SNamnet fettisdag är bildat av "fet" och "tisdag", där fet syftar på all fet mat som brukade ätas på fettisdagen.
-C2namnet fettisdag
-Rär
-C1bildat
-Rav
-C1fet
-Roch
-C1tisdag
-Rdär
-C1fet
-Rsyftar på
-C3all fet mat
-Rsom brukade ätas på
-C1fettisdagen
-Pnamnet fettisdag är bildat av fet och tisdag där fet syftar på all fet mat som brukade ätas på fettisdagen
 SOrdet är belagt sedan 1594.
+<attr type="time" literal="1594." token="1594.">
 C1ordet
 Rär
 C1belagt
 Rsedan
 C11594
 Pordet är belagt sedan 1594
-SHur vita tisdagen har fått <sitt> namn är oklart, men en teori är att namnet kommer av det vita vetemjöl som <man> bakar semlor med.
-Rhur
-C2vita tisdagen
-Rhar fått
-PR<sitt>
-C1namn
-Rär
-C1oklart
-Rmen
-C1teori
-Rär
-Ratt
-C1namnet
-Rkommer av
-C2vita vetemjöl
-Rsom
-PR<man>
-Rbakar
-C1semlor
-Rmed
-Phur vita tisdagen har fått sitt namn är oklart men teori är att namnet kommer av vita vetemjöl som man bakar semlor med
-SI södra Sverige har <de> traditionellt ätits på fastlagsmåndagen.
-Ri
-C2södra sverige
-Rhar
-PR<de>
-Rtraditionellt ätits på
-C1fastlagsmåndagen
-Pi södra sverige har de traditionellt ätits på fastlagsmåndagen
-SDagen kallades då för "bullamåndag".
-C1dagen
-Rkallades för
-C1bullamåndag
-Pdagen kallades för bullamåndag
+<attr type="time" span="sedan 1594">
 SI Sverige äts bullarna <oftast> med vispgrädde under bullens avskurna ovansida, och med mandelmassa i en urgröpning mitt i bullen.
+<attr type="time" literal="oftast" token="oftast">
 Ri
 C1sverige
 Räts
@@ -7601,6 +7669,8 @@ Rmitt i
 C1bullen
 Pi sverige äts bullarna oftast med vispgrädde under bullens avskurna ovansida och med mandelmassa i urgröpning mitt i bullen
 S <Ibland> serveras <de> i varm mjölk enligt en tradition från 1700-talet, och kallas då hetvägg.
+<attr type="time" literal="Ibland" token="Ibland">
+<attr type="time" literal="1700-talet," token="1700-talet,">
 PR<ibland>
 Rserveras
 PR<de>
@@ -7629,6 +7699,7 @@ Roch
 C1kaka
 Pfika är svensk samhällsinstitution som innebär mellanmänskligt umgänge i kombination med intagande av kaffe och kaka
 SFika förekommer <vanligen> inom svenskt arbetsliv, i form av fikapauser eller kaffepauser – en fika tillsammans med kollegor.
+<attr type="time" literal="vanligen" token="vanligen">
 C1fika
 Rförekommer
 PR<vanligen>
@@ -7650,6 +7721,7 @@ Rav
 C2svensk kultur
 Ptradition kan anses vara del av svensk kultur
 SPausen är del av den betalda arbetstiden och tillbringas <ofta> i närheten av kaffemaskiner och lunch/fika-rum.
+<attr type="time" literal="ofta" token="ofta">
 C1pausen
 Rär
 C1del
@@ -7740,10 +7812,12 @@ C2särskilt begrepp
 Rär
 C2rörliga friluftslivet
 Psärskilt begrepp är rörliga friluftslivet
-SDet rörliga friluftslivet skulle på 1980-talet främjas särskilt genom inrättandet av naturvårdsområden där tillgängligheten till naturen gavs särskilda resurser för att öka tillgängligheten till skog, mark och vatten utan de inskränkningar som naturreservat och nationalparker inneburit.
+SDet rörliga friluftslivet skulle på 1980-talet främjas särskilt genom inrättandet av naturvårdsområden där tillgängligheten till naturen gavs särskilda resurser för att öka tillgängligheten till skog, mark och vatten utan de inskränkningar som naturreservat och nationalparker inneburit.
+<attr type="time" literal="1980-talet" token="1980-talet">
 <attr type="negation" literal="utan" token="utan">
 C2rörliga friluftslivet
-Rskulle på
+Rskulle
+Rpå
 C11980-talet
 Rfrämjas genom
 C1inrättandet
@@ -7771,6 +7845,7 @@ C1nationalparker
 Rinneburit
 Prörliga friluftslivet skulle på 1980-talet främjas genom inrättandet av naturvårdsområden där tillgängligheten till naturen gavs särskilda resurser för att öka tillgängligheten till skog mark och vatten utan inskränkningar som naturreservat och nationalparker inneburit
 <attr type="negation" span="utan inskränkningar">
+<attr type="time" span="på 1980-talet">
 SAktiviteter under fredagsmyset varierar exempelvis mellan barnfamiljer och äldre.
 C1aktiviteter
 Runder
@@ -7807,6 +7882,7 @@ C1delaktiga
 Ri
 Pfredagsmyset kan numera ses som modern rit något som barnen har lätt att ta åt sig av och känna sig delaktiga i
 SBarn är <ofta> svältfödda på odelad uppmärksamhet och en lugn tid när barn och föräldrar är tillsammans är därför mycket viktig, enligt barnpsykologen Elisabeth Cleve.
+<attr type="time" literal="ofta" token="ofta">
 C1barn
 Rär
 PR<ofta>
@@ -7844,45 +7920,6 @@ C2vardagsavvikande mat
 Rhar
 C2lång tradition
 Psamlingen av familjen runt vardagsavvikande mat har lång tradition
-SSöndagsmiddag och söndagsfrid är två begrepp från 1800- och 1900-talens början när endast söndagen var arbetsfri dag i veckan.
-C1söndagsmiddag
-Roch
-C1söndagsfrid
-Rär
-C2två begrepp
-Rfrån
-C41800- och 1900-talens början
-Rnär
-C1söndagen
-Rvar
-C2arbetsfri dag
-Ri
-C1veckan
-Psöndagsmiddag och söndagsfrid är två begrepp från 1800- och 1900-talens början när söndagen var arbetsfri dag i veckan
-SNär skolundervisningen på lördagar slopades läsåret 1968/69 och 40-timmarsveckan infördes i början av 1970-talet samlades familjen runt <något> som kallades "kvällsgott" <(ibland> fredagsgott eller lördagsgott).
-Rnär
-C1skolundervisningen
-Rpå
-C1lördagar
-Rslopades
-C2läsåret 1968/69
-Roch
-C140-timmarsveckan
-Rinfördes i
-C1början
-Rav
-C11970-talet
-Rsamlades
-C1familjen
-Rrunt
-PR<något>
-Rsom kallades
-C1kvällsgott
-PR<ibland>
-C1fredagsgott
-Reller
-C1lördagsgott
-Pnär skolundervisningen på lördagar slopades läsåret 1968/69 och 40-timmarsveckan infördes i början av 1970-talet samlades familjen runt något som kallades kvällsgott ibland fredagsgott eller lördagsgott
 S <Det> förekommer recept på "gott"-rätter från den tiden i mattidningar och nya kokböcker.
 PR<det>
 Rförekommer
@@ -7897,6 +7934,7 @@ Roch
 C2nya kokböcker
 Pdet förekommer recept på gott"-rätter från tiden i mattidningar och nya kokböcker
 SDe här måltiderna intogs <vanligen> framför TV:n, och tar vid i den tradition av TV-ätande som inleddes under 1960-talets början.
+<attr type="time" literal="vanligen" token="vanligen">
 C1måltiderna
 Rintogs
 PR<vanligen>
@@ -7923,6 +7961,7 @@ Rpå
 C5mer traditionell middags- eller supémat
 Pgott"-rätterna var i hög grad familjeangelägenhet för hade man gäster bjöd man på mer traditionell middags- eller supémat
 SGlögg är en nordisk varm dryck baserad på kryddat vin <(vanligtvis> rött) eller sprit.
+<attr type="time" literal="(vanligtvis" token="(vanligtvis">
 C1glögg
 Rär
 C3nordisk varm dryck
@@ -7996,30 +8035,21 @@ C1tomtenissar
 Rsom kokade eller smakade på
 C2rykande drycken
 Pman började förknippa glöggen med julfirandet och dekorerade etiketterna med tomtenissar som kokade eller smakade på rykande drycken
-SJulkalendern sänds varje dag från 1 december fram till julafton den 24 december.
+SJulkalendern sänds varje dag från 1 december fram till julafton den 24 december.
+<attr type="time" literal="varje dag" token="varje dag">
+<attr type="time" literal="1 december" token="1 december">
+<attr type="time" literal="julafton den 24 december." token="julafton den 24 december.">
 C1julkalendern
 Rsänds
 C2varje dag
 Rfrån
 C21 december
 Rfram till
-C1julafton
-C3den 24 december
+C4julafton den 24 december
 Pjulkalendern sänds varje dag från 1 december fram till julafton den 24 december
-SNågra år har <den> dock sänts från första söndagen i advent även om denna söndag har infallit efter eller före 1 december.
-C2några år
-Rhar
-PR<den>
-Rsänts från
-C2första söndagen
-Ri
-C1advent
-Räven om
-C1söndag
-Rhar infallit efter eller före
-C21 december
-Pnågra år har den sänts från första söndagen i advent även om söndag har infallit efter eller före 1 december
+<attr type="time" span="varje dag från 1 december fram till julafton den 24 december">
 SDen första julkalendern hette Titteliture och visades år 1960.
+<attr type="time" literal="år 1960." token="år 1960.">
 C2första julkalendern
 Rhette
 C1titteliture
@@ -8034,6 +8064,7 @@ Ri
 C1barnkanalen
 Pnågon har visats i repris i barnkanalen
 SEtt urval brukar vara tillgängligt för allmänheten i SVT:s Öppet arkiv kring jul.
+<attr type="time" literal="jul." token="jul.">
 C1urval
 Rbrukar vara
 C1tillgängligt
@@ -8044,7 +8075,9 @@ C3svt:s öppet arkiv
 Rkring
 C1jul
 Purval brukar vara tillgängligt för allmänheten i svt:s öppet arkiv kring jul
+<attr type="time" span="kring jul">
 SJulkalendern 2015 utgör ett undantag, där en rättighetstvist stoppat återutgivning.
+<attr type="time" literal="Julkalendern 2015" token="2015">
 C2julkalendern 2015
 Rutgör
 C1undantag
@@ -8202,6 +8235,7 @@ C1tidigare
 Ppå finska är namnet på bastu sauna vilket har fått ge namn till ångbadsform i de flesta delar av världen som inte haft den tidigare
 <attr type="negation" span="som inte haft den tidigare">
 SBastubad var vida utbrett i Mellan- och Nordeuropa under medeltiden.
+<attr type="time" literal="medeltiden." token="medeltiden.">
 C1bastubad
 Rvar
 C2vida utbrett
@@ -8210,6 +8244,7 @@ C3mellan- och nordeuropa
 Runder
 C1medeltiden
 Pbastubad var vida utbrett i mellan- och nordeuropa under medeltiden
+<attr type="time" span="under medeltiden">
 SUnder den tiden var <det> vanligt med offentliga bastuinrättningar i städerna.
 Runder
 C1tiden
@@ -8222,7 +8257,9 @@ Ri
 C1städerna
 Punder tiden var det vanligt med offentliga bastuinrättningar i städerna
 S <De> förbjöds <oftast> <senare,> under 1500- och 1600-talet.
+<attr type="time" literal="oftast" token="oftast">
 <attr type="time" literal="senare," token="senare,">
+<attr type="time" literal="1500- och 1600-talet." token="1500- och 1600-talet.">
 PR<de>
 Rförbjöds
 PR<oftast>
@@ -8230,6 +8267,7 @@ PR<senare>
 Runder
 C31500- och 1600-talet
 Pde förbjöds oftast senare under 1500- och 1600-talet
+<attr type="time" span="under 1500- och 1600-talet">
 SI Östsverige användes bastun som rök.
 Ri
 C1östsverige
@@ -8254,6 +8292,7 @@ Rhos
 C1myndigheter
 Ppersonnummer är nummer som skatteverket tilldelar personer folkbokförda i sverige för att identifiera dem hos myndigheter
 SSystemet, som var det första i världen som omfattade ett lands hela befolkning, infördes 1 januari 1947.
+<attr type="time" literal="1 januari 1947." token="1 januari 1947.">
 C1systemet
 Rsom var
 C1första
@@ -8272,6 +8311,7 @@ Rregleras i
 C2folkbokföringslagens §18
 Ptilldelningen av personnummer regleras i folkbokföringslagens §18
 SKällskatten infördes 1 januari 1947, vilket innebar att <man> <nu> inte skulle betala skatten i efterskott utan i samband med att inkomsten kom in.
+<attr type="time" literal="1 januari 1947," token="1 januari 1947,">
 <attr type="time" literal="nu" token="nu">
 <attr type="negation" literal="inte skulle betala" token="inte">
 C1källskatten
@@ -8368,6 +8408,7 @@ C1dag
 Psex första siffrorna består av personens födelsedatum noterat som år utan sekelangivning månad och dag
 <attr type="negation" span="utan sekelangivning">
 SFram till 1990 visade födelsenumrets två första siffror var personen fötts.
+<attr type="time" literal="1990" token="1990">
 Rfram till
 C11990
 Rvisade
@@ -8376,7 +8417,9 @@ Rvar
 C1personen
 Rfötts
 Pfram till 1990 visade födelsenumrets två första siffror var personen fötts
+<attr type="time" span="fram till 1990">
 SDen sista siffran är en kontrollsiffra som infördes 1967 i samband med att personnumren datoriserades.
+<attr type="time" literal="1967" token="1967">
 C2sista siffran
 Rär
 C1kontrollsiffra
@@ -8426,6 +8469,7 @@ C2brungrå päls
 Rkan förekomma
 Ppälsen är tjock och färgen varierar från ljusbrun till mörkbrun brungrå päls kan förekomma
 SYngre björnar har <ofta> en ljusare halsbandslik teckning runt halsen.
+<attr type="time" literal="ofta" token="ofta">
 C2yngre björnar
 Rhar
 PR<ofta>
@@ -8461,6 +8505,7 @@ Rpå
 C1päls
 Pbrunbjörnen uppvisar en rad lokala variationer över sitt stora utbredningsområde vad gäller storlek vikt skallform och färg på päls
 SHundraåringen som klev ut genom fönstret och försvann är en roman från 2009 av Jonas Jonasson.
+<attr type="time" literal="2009" token="2009">
 C1hundraåringen
 Rsom klev ut genom
 C1fönstret
@@ -8479,15 +8524,18 @@ PR<hans>
 C1debutroman
 Promanen är hans debutroman
 SBoken vann även Iris Ljudbokspris för Årets bästa ljudbok 2010.
+<attr type="time" literal="Årets bästa ljudbok 2010." token="2010.">
 C1boken
 Rvann
 C2iris ljudbokspris
 Rför
 C4årets bästa ljudbok 2010
 Pboken vann iris ljudbokspris för årets bästa ljudbok 2010
-SPocketversionen utkom i april 2010, och hamnade snabbt på förstaplats på pockettoppen hos bland annat Bokus, Pocket Shop och Bokia.
+SPocketversionen utkom i april 2010, och hamnade snabbt på förstaplats på pockettoppen hos bland annat Bokus, Pocket Shop och Bokia.
+<attr type="time" literal="april 2010," token="april 2010,">
 C1pocketversionen
-Rutkom i
+Rutkom
+Ri
 C2april 2010
 Roch hamnade snabbt på
 C1förstaplats
@@ -8499,3 +8547,4 @@ C2pocket shop
 Roch
 C1bokia
 Ppocketversionen utkom i april 2010 och hamnade snabbt på förstaplats på pockettoppen hos bokus pocket shop och bokia
+<attr type="time" span="i april 2010">

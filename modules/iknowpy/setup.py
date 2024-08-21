@@ -297,7 +297,7 @@ class MergeCommand(Command):
         # update metadata
         metadata_filepath = os.path.join(extracted_dirs[0], f'iknowpy-{version}.dist-info', 'WHEEL')
         print(f'updating wheel metadata file {metadata_filepath}')
-        with open(metadata_filepath, 'w') as metadata_file:
+        with open(metadata_filepath, 'w', newline='\n') as metadata_file:
             for key, values in metadata.items():
                 for value in sorted(values):
                     metadata_file.write(f'{key}: {value}\n')
@@ -386,7 +386,7 @@ def update_wheel_record(whl_dir):
     for root, _, files in os.walk(whl_dir):
         for file in files:
             filepath_list.append(os.path.join(root, file))
-    with open(record_filepath, 'w') as record_file:
+    with open(record_filepath, 'w', newline='\n') as record_file:
         for file_path in filepath_list:
             if file_path == record_filepath:
                 record_file.write(os.path.relpath(record_filepath, whl_dir).replace('\\', '/'))
@@ -514,8 +514,9 @@ def patch_wheel(whl_path, extracted=False):
     to interfere with each other.
 
     To patch the wheel, we rename the iKnow engine and ICU shared libraries by
-    adding a hash to the file names, and then we re-link them to the newly
-    renamed libraries. This way, we can guarantee that the correct library is
+    adding a hash to the file names on Windows and Linux. (This step is not
+    necessary on macOS.) On all platforms, we re-link the libraries so that they
+    are found at runtime. This way, we can guarantee that the correct library is
     loaded when iknowpy is imported."""
 
     print('repairing wheel')
@@ -560,7 +561,8 @@ def patch_wheel(whl_path, extracted=False):
     lib_rename = {}  # dict from old lib name to new lib name
     for lib_path in repair_lib_paths:
         lib_name = os.path.basename(lib_path)
-        if lib_name.startswith('engine.'):  # don't rename main module file
+        if lib_name.startswith('engine.') or sys.platform == 'darwin':
+            # don't rename main module file or if we're on macOS
             lib_rename[lib_name] = lib_name
         else:
             lib_name_split = lib_name.split('.')
@@ -711,7 +713,7 @@ else:
             # set wheel target platform to that of the build platform
             macosx_version = '.'.join(platform.mac_ver()[0].split('.')[:2])
             os.environ['MACOSX_DEPLOYMENT_TARGET'] = macosx_version
-            sys.argv.append(f'--plat-name=macosx-{macosx_version}-x86_64')
+            sys.argv.append(f'--plat-name=macosx-{macosx_version}-{"arm64" if platform.processor() == "arm" else "x86_64"}')
     else:
         iculibs_name_pattern = 'libicu*.so*'
         enginelibs_name_pattern = 'libiknow*.so'
@@ -781,11 +783,18 @@ try:
 
         # include git revision in distribution
         with open('iknowpy/git_revision', 'w') as f:
-            subprocess.run(
-                ['git', 'rev-parse', 'HEAD'],
-                stdout=f, stderr=subprocess.PIPE, universal_newlines=True,
-                check=True
-            )
+            try:
+                subprocess.run(
+                    ['git', 'rev-parse', 'HEAD'],
+                    stdout=f, stderr=subprocess.PIPE, universal_newlines=True,
+                    check=True
+                )
+            except subprocess.CalledProcessError as ex:
+                if ex.stdout:
+                    print(ex.stdout)
+                if ex.stderr:
+                    print(ex.stderr)
+                raise
         package_data = {'iknowpy': ['git_revision']}
     setup(
         name='iknowpy',
@@ -796,18 +805,18 @@ try:
         author='InterSystems Corporation',
         license='MIT',
         classifiers=[
-            'Development Status :: 4 - Beta',
+            'Development Status :: 5 - Production/Stable',
             'License :: OSI Approved :: MIT License',
             'Topic :: Scientific/Engineering :: Information Analysis',
             'Programming Language :: C++',
             'Programming Language :: Cython',
             'Programming Language :: Python :: 3',
             'Programming Language :: Python :: 3 :: Only',
-            'Programming Language :: Python :: 3.6',
-            'Programming Language :: Python :: 3.7',
             'Programming Language :: Python :: 3.8',
             'Programming Language :: Python :: 3.9',
             'Programming Language :: Python :: 3.10',
+            'Programming Language :: Python :: 3.11',
+            'Programming Language :: Python :: 3.12',
             'Programming Language :: Python :: Implementation :: CPython',
             'Operating System :: MacOS :: MacOS X',
             'Operating System :: Microsoft :: Windows',
@@ -822,9 +831,9 @@ try:
         packages=['iknowpy'],
         package_data=package_data,
         version=version,
-        python_requires='>=3.6',
+        python_requires='>=3.8',
         setup_requires=[
-            'cython',
+            'cython>=3',
             'wheel',
             'setuptools>=20.6.8',
             'pefile; sys_platform == "win32"',
@@ -841,8 +850,7 @@ try:
                 extra_compile_args=extra_compile_args,
                 extra_link_args=extra_link_args
             )],
-            annotate=annotate,
-            compiler_directives={'language_level': '3', 'binding': True}
+            annotate=annotate
         ),
         cmdclass={
             'clean': CleanCommand,

@@ -22,6 +22,27 @@ Rmed
 C2naturens krafter
 Palfred nobel var mycket begåvad hade stor arbetsförmåga och fast tro på mänsklighetens utveckling genom fredlig kamp med naturens krafter
 <attr type="PositiveSentiment" span="stor arbetsförmåga">
+S <Alla andra> som var med på bokturnén säljer jättemånga böcker.
+<attr type="measurement" literal="jättemånga böcker." token="jättemånga böcker." value="jättemånga" unit="böcker">
+PR<alla andra>
+Rsom var med på
+C1bokturnén
+Rsäljer
+C2jättemånga böcker
+Palla andra som var med på bokturnén säljer jättemånga böcker
+SAlla julförberedelser skulle vara klara till luciadagen och <det> firade <man> med att äta och dricka lite extra.
+C2alla julförberedelser
+Rskulle vara
+C1klara
+Rtill
+C1luciadagen
+Roch
+PR<det>
+Rfirade
+PR<man>
+Rmed att äta och
+C3dricka lite extra
+Palla julförberedelser skulle vara klara till luciadagen och det firade man med att äta och dricka lite extra
 SAsiatiska krabbor hotar västkusten.
 <attr type="negativesentiment" literal="hotar" token="hotar">
 C2asiatiska krabbor
@@ -29,14 +50,16 @@ Rhotar
 C1västkusten
 Pasiatiska krabbor hotar västkusten
 <attr type="NegativeSentiment" span="asiatiska krabbor hotar västkusten">
-SBara <det> inte brusar alltför starkt, alltför länge och <alltför ofta> återkommande, då blir användaren irriterad.
+SBara <det> inte brusar alltför starkt, <alltför länge> och <alltför ofta> återkommande, då blir användaren irriterad.
 <attr type="negation" literal="inte brusar alltför starkt," token="inte">
 <attr type="negativesentiment" literal="inte brusar alltför starkt," token="alltför starkt,">
-<attr type="negativesentiment" literal="alltför länge" token="alltför">
+<attr type="negativesentiment" literal="alltför länge" token="alltför länge">
+<attr type="time" literal="alltför länge" token="alltför länge">
+<attr type="time" literal="alltför ofta" token="alltför ofta">
 <attr type="negativesentiment" literal="alltför ofta" token="alltför ofta">
 PR<det>
 Rinte brusar alltför starkt
-C2alltför länge
+PR<alltför länge>
 Roch
 PR<alltför ofta>
 C1återkommande
@@ -46,6 +69,7 @@ Pdet inte brusar alltför starkt alltför länge och alltför ofta återkommand
 <attr type="negation" span="det inte brusar alltför starkt alltför länge och alltför ofta återkommande">
 <attr type="NegativeSentiment" span="det inte brusar alltför starkt alltför länge och alltför ofta återkommande">
 SBenskörhet har <ofta> många olika orsaker <det> kan vara en följd av att <man> i ungdomen byggde upp en alltför liten benmassa, men också bero på att <man> av någon orsak förlorat benmassa relativt snabbt under en längre tid.
+<attr type="time" literal="ofta" token="ofta">
 <attr type="negativesentiment" literal="alltför liten benmassa," token="alltför">
 <attr type="positivesentiment" literal="relativt snabbt under" token="relativt snabbt">
 C1benskörhet
@@ -77,7 +101,6 @@ Pbenskörhet har ofta många olika orsaker det kan vara följd av att man i ung
 SBra bevisning hjälper föga om <det> som bevisas är ointressant.
 <attr type="positivesentiment" literal="Bra bevisning" token="Bra">
 <attr type="positivesentiment" literal="hjälper föga om" token="hjälper">
-<attr type="negation" literal="hjälper föga om" token="föga">
 C2bra bevisning
 Rhjälper föga om
 PR<det>
@@ -85,7 +108,6 @@ Rsom bevisas
 Rär
 C1ointressant
 Pbra bevisning hjälper föga om det som bevisas är ointressant
-<attr type="negation" span="bra bevisning hjälper föga om det">
 <attr type="PositiveSentiment" span="bra bevisning hjälper föga om det">
 SBullriga barn är norm i hyreshus.
 <attr type="negativesentiment" literal="Bullriga barn" token="Bullriga">
@@ -140,6 +162,7 @@ Plitteraturkritikern har i stort sett nöjt sig med att konstatera att bokens n
 <attr type="PositiveSentiment" span="litteraturkritikern har i stort sett nöjt sig med att konstatera">
 S <Det> blev en dålig start på hösten för klädhandeln.
 <attr type="negativesentiment" literal="dålig start" token="dålig">
+<attr type="time" literal="hösten" token="hösten">
 PR<det>
 Rblev
 C2dålig start
@@ -148,7 +171,42 @@ C1hösten
 Rför
 C1klädhandeln
 Pdet blev dålig start på hösten för klädhandeln
+<attr type="time" span="på hösten">
 <attr type="NegativeSentiment" span="dålig start på hösten för klädhandeln">
+S <Det> blev en mycket inflytelserik text under närmare 1000 år.
+<attr type="time" literal="år." token="år.">
+PR<det>
+Rblev
+C3mycket inflytelserik text
+Runder
+C1år
+Pdet blev mycket inflytelserik text under år
+SDet gemensamma för <dessa> är att <man> satsar (pengar, normalt) på en framtida händelse som kan inträffa eller ej, eller på en redan inträffad händelse vars utfall är åtminstone delvis obekant.
+<attr type="negation" literal="eller ej," token="ej,">
+<attr type="time" literal="redan inträffad händelse" token="redan inträffad">
+C1gemensamma
+Rför
+PR<dessa>
+Rär
+Ratt
+PR<man>
+Rsatsar
+C1pengar
+C1normalt
+Rpå
+C2framtida händelse
+Rsom kan inträffa
+Reller ej
+Reller
+Rpå
+C3redan inträffad händelse
+Rvars
+C1utfall
+Rär åtminstone
+C2delvis obekant
+Pgemensamma för dessa är att man satsar pengar normalt på framtida händelse som kan inträffa eller ej eller på redan inträffad händelse vars utfall är åtminstone delvis obekant
+<attr type="negation" span="eller ej eller på redan inträffad händelse">
+<attr type="time" span="på redan inträffad händelse">
 S <Det> är bra för de boende i drabbade områden att veta.
 <attr type="positivesentiment" literal="bra" token="bra">
 PR<det>
@@ -186,6 +244,17 @@ Rkvar i
 C1laget
 Pdet är många bra och kloka spelare kvar i laget
 <attr type="PositiveSentiment" span="många bra och kloka spelare">
+S <Detta> är en viktig pusselbit för att förstå hjärnskador under graviditeten.
+<attr type="time" literal="graviditeten." token="graviditeten.">
+PR<detta>
+Rär
+C2viktig pusselbit
+Rför att förstå
+C1hjärnskador
+Runder
+C1graviditeten
+Pdetta är viktig pusselbit för att förstå hjärnskador under graviditeten
+<attr type="time" span="under graviditeten">
 SDärigenom får fastighetsägare det underlag inför beslut som <de> behöver.
 Rdärigenom får
 C1fastighetsägare
@@ -196,11 +265,41 @@ Rsom
 PR<de>
 Rbehöver
 Pdärigenom får fastighetsägare underlag inför beslut som de behöver
+S <Då> hade <den> redan funnits i 30 år.
+<attr type="time" literal="redan funnits i" token="redan funnits">
+<attr type="time" literal="30 år." token="30 år.">
+PR<då>
+Rhade
+PR<den>
+Rredan funnits i
+C230 år
+Pdå hade den redan funnits i 30 år
+<attr type="time" span="redan funnits i 30 år">
 SEn patient hade försämrats märkbart på grund av progredierande hematom.
 Rhade försämrats märkbart på grund av
 C2progredierande hematom
 Phade försämrats märkbart på grund av progredierande hematom
+SEn tiokronorssedel värderades till tolv jetonger.
+<attr type="measurement" literal="tolv jetonger." token="tolv jetonger." value="tolv" unit="jetonger">
+C1tiokronorssedel
+Rvärderades till
+C2tolv jetonger
+Ptiokronorssedel värderades till tolv jetonger
+SFrågan är om dessa nya diagnostiska kriterier kan vara till hjälp i <vår> dagliga praktiska verksamhet redan i dag.
+<attr type="time" literal="redan i dag." token="redan i dag.">
+C1frågan
+Rär
+Rom
+C3nya diagnostiska kriterier
+Rkan vara till
+C1hjälp
+Ri
+PR<vår>
+C3dagliga praktiska verksamhet
+C3redan i dag
+Pfrågan är om nya diagnostiska kriterier kan vara till hjälp i vår dagliga praktiska verksamhet redan i dag
 S <För det mesta> läker sjukdomen snabbt.
+<attr type="time" literal="För det mesta" token="För det mesta">
 <attr type="positivesentiment" literal="snabbt." token="snabbt.">
 PR<för det mesta>
 Rläker
@@ -238,8 +337,28 @@ PR<oss>
 C2flera gånger
 Phan spelade bra i målet och räddade oss flera gånger
 <attr type="PositiveSentiment" span="han spelade bra i målet">
+S <Hans> företag har redan, åtminstone tillfälligt, tappat ett viktigt samarbetsavtal.
+<attr type="time" literal="har redan," token="har redan,">
+PR<hans>
+C1företag
+Rhar redan
+C2åtminstone tillfälligt
+Rtappat
+C2viktigt samarbetsavtal
+Phans företag har redan åtminstone tillfälligt tappat viktigt samarbetsavtal
+S <Hans> företag har också <redan,> åtminstone tillfälligt, tappat ett viktigt samarbetsavtal.
+<attr type="time" literal="redan," token="redan,">
+PR<hans>
+C1företag
+Rhar
+PR<redan>
+C2åtminstone tillfälligt
+Rtappat
+C2viktigt samarbetsavtal
+Phans företag har redan åtminstone tillfälligt tappat viktigt samarbetsavtal
 S <Hon> har gått runt och förklarat hemma – inte ens tre år gammal – att pappa mår bättre <nu.>
 <attr type="positivesentiment" literal="hemma" token="hemma">
+<attr type="measurement" literal="inte ens tre år gammal" token="tre år gammal" value="tre" unit="år gammal">
 <attr type="negation" literal="inte ens tre år gammal" token="inte ens">
 <attr type="time" literal="nu." token="nu.">
 PR<hon>
@@ -255,6 +374,7 @@ PR<nu>
 Phon har gått runt och förklarat hemma inte ens tre år gammal att pappa mår bättre nu
 <attr type="negation" span="inte ens tre år gammal">
 <attr type="PositiveSentiment" span="och förklarat hemma">
+<attr type="measurement" span="inte ens tre år gammal">
 S <Hon> såg hur stressad butiksinnehavaren var och erbjöd sig att komma och hjälpa <honom.>
 <attr type="positivesentiment" literal="och hjälpa" token="hjälpa">
 PR<hon>
@@ -321,6 +441,42 @@ Rutan förs till
 C2gruppen protister
 Pi nutida systematik räknas inte protozoer till djurriket utan förs till gruppen protister
 <attr type="negation" span="i nutida systematik räknas inte protozoer till djurriket">
+SI oktober hade andelen ökat till 31 procent.
+<attr type="time" literal="oktober" token="oktober">
+Ri
+C1oktober
+Rhade
+C1andelen
+Rökat till
+C231 procent
+Pi oktober hade andelen ökat till 31 procent
+<attr type="time" span="i oktober">
+S <Jag> minns att <jag> läste en artikel om en rockgrupp som sålde jättemånga skivor och hade jättemånga beundrare.
+<attr type="measurement" literal="jättemånga skivor" token="jättemånga" value="jättemånga">
+<attr type="measurement" literal="jättemånga beundrare." token="jättemånga" value="jättemånga">
+PR<jag>
+Rminns
+Ratt
+PR<jag>
+Rläste
+C1artikel
+Rom
+C1rockgrupp
+Rsom sålde
+C2jättemånga skivor
+Roch hade
+C2jättemånga beundrare
+Pjag minns att jag läste artikel om rockgrupp som sålde jättemånga skivor och hade jättemånga beundrare
+<attr type="measurement" span="jättemånga skivor">
+<attr type="measurement" span="jättemånga beundrare">
+SLiknande förhållanden har naturligtvis funnits även längre tillbaka i tiden.
+<attr type="time" literal="tiden." token="tiden.">
+C2liknande förhållanden
+Rhar naturligtvis funnits längre
+Rtillbaka i
+C1tiden
+Pliknande förhållanden har naturligtvis funnits längre tillbaka i tiden
+<attr type="time" span="tillbaka i tiden">
 SLägre organismer med hög reproduktion, kort generationstid och brutal selektion har bättre möjligheter att anpassa sig snabbt.
 <attr type="positivesentiment" literal="att anpassa sig snabbt." token="snabbt.">
 C2lägre organismer
@@ -426,6 +582,7 @@ C1karaktärsdygderna
 Pstorhet är möjligt för den som är verkligt bra människa som är förträfflig som människa d v s besitter karaktärsdygderna
 <attr type="PositiveSentiment" span="verkligt bra människa">
 SNär <man> blir magsjuk av bakterier är <det> vanligt att <man> har blivit smittad utomlands, <ofta> där den hygieniska standarden är dålig.
+<attr type="time" literal="ofta" token="ofta">
 <attr type="negativesentiment" literal="dålig." token="dålig.">
 Rnär
 PR<man>
@@ -462,6 +619,16 @@ Rövervägas
 Pom ingreppet inte lyckas eller bedöms alltför riskfyllt bör bronkotomi övervägas
 <attr type="negation" span="om ingreppet inte lyckas">
 <attr type="NegativeSentiment" span="alltför riskfyllt">
+SOmrådet runt sjön är vintertid känt för att vara snörikt.
+C1området
+Rrunt
+C1sjön
+Rär
+C1vintertid
+Rkänt
+Rför att vara
+C1snörikt
+Pområdet runt sjön är vintertid känt för att vara snörikt
 SOtto är en fantastisk spelare och <det> är riktigt skönt att få ha <honom> vid <min> sida.
 <attr type="positivesentiment" literal="fantastisk spelare" token="fantastisk">
 <attr type="positivesentiment" literal="riktigt skönt" token="riktigt skönt">
@@ -526,6 +693,11 @@ C1familj
 Rär
 Psitt frieri till henne ägnar han mest åt att deklarera att han älskar henne trots allt vad förnuftet säger och att beklaga sig över hur hopplös hennes familj är
 <attr type="NegativeSentiment" span="och att beklaga sig över hur hopplös hennes familj är">
+SSjukdomen behöver sällan behandlas med antibiotika.
+C1sjukdomen
+Rbehöver sällan behandlas med
+C1antibiotika
+Psjukdomen behöver sällan behandlas med antibiotika
 SSkälet är att ett äktenskap skulle vara alltför ekonomiskt riskfyllt i nuläget, vilket är, kanske inte invändningsfritt, men en rimlig synpunkt.
 <attr type="negativesentiment" literal="alltför ekonomiskt riskfyllt" token="alltför ekonomiskt">
 <attr type="negation" literal="kanske inte" token="inte">
@@ -545,6 +717,63 @@ C2rimlig synpunkt
 Pskälet är att äktenskap skulle vara alltför ekonomiskt riskfyllt i nuläget vilket är kanske inte invändningsfritt men rimlig synpunkt
 <attr type="negation" span="vilket är kanske inte invändningsfritt">
 <attr type="NegativeSentiment" span="alltför ekonomiskt riskfyllt i nuläget">
+SSommaren är slut och <vi> går över till vintertid (normaltid) natten mellan lördag och söndag.
+<attr type="positivesentiment" literal="vi" token="vi">
+<attr type="time" literal="natten" token="natten">
+<attr type="time" literal="lördag" token="lördag">
+<attr type="time" literal="söndag." token="söndag.">
+C1sommaren
+Rär
+C1slut
+Roch
+PR<vi>
+Rgår över
+Rtill
+C1vintertid
+C1normaltid
+C1natten
+Rmellan
+C1lördag
+Roch
+C1söndag
+Psommaren är slut och vi går över till vintertid normaltid natten mellan lördag och söndag
+<attr type="time" span="natten mellan lördag och söndag">
+<attr type="PositiveSentiment" span="och vi går över till vintertid normaltid natten mellan lördag och söndag">
+SSpråkhandlingskategorierna är framför allt pragmatiska kategorier, och som <sådana> kan <de> inte uttömmande beskrivas utan hänvisning till den diskursiva praktiken.
+<attr type="negation" literal="inte uttömmande" token="inte">
+<attr type="negation" literal="utan" token="utan">
+C1språkhandlingskategorierna
+Rär
+C2pragmatiska kategorier
+Roch som
+PR<sådana>
+Rkan
+PR<de>
+C2inte uttömmande
+Rbeskrivas
+Rutan
+C1hänvisning
+Rtill
+C2diskursiva praktiken
+Pspråkhandlingskategorierna är pragmatiska kategorier och som sådana kan de inte uttömmande beskrivas utan hänvisning till diskursiva praktiken
+<attr type="negation" span="och som sådana kan de inte uttömmande beskrivas utan hänvisning till diskursiva praktiken">
+SStockholms stadslandskap och stadsbild som <vi> uppfattar <dem> idag har formats under många hundratals år.
+<attr type="positivesentiment" literal="vi" token="vi">
+<attr type="time" literal="idag" token="idag">
+C2stockholms stadslandskap
+Roch
+C1stadsbild
+Rsom
+PR<vi>
+Ruppfattar
+PR<dem>
+C1idag
+Rhar
+C1formats
+Runder
+C3många hundratals år
+Pstockholms stadslandskap och stadsbild som vi uppfattar dem idag har formats under många hundratals år
+<attr type="PositiveSentiment" span="som vi uppfattar dem idag">
 SStora teleskop är bra även för att <de> samlar in mer ljus än små.
 <attr type="positivesentiment" literal="Stora teleskop" token="Stora">
 <attr type="positivesentiment" literal="bra" token="bra">
@@ -566,6 +795,68 @@ Rkan dessutom förekomma mellan
 C2olika discipliner
 Pstora variationer kan dessutom förekomma mellan olika discipliner
 <attr type="PositiveSentiment" span="stora variationer">
+STack vare <de> eroderande krafterna samlar en vanlig flod upp flera miljoner ton sediment på <sin> väg.
+Rtack vare
+PR<de>
+C2eroderande krafterna
+Rsamlar
+C2vanlig flod
+Rupp
+C4flera miljoner ton sediment
+Rpå
+PR<sin>
+C1väg
+Ptack vare de eroderande krafterna samlar vanlig flod upp flera miljoner ton sediment på sin väg
+<attr type="measurement" span="flera miljoner ton sediment">
+STumören har vuxit och blivit flera centimeter stor.
+<attr type="positivesentiment" literal="flera centimeter stor." token="stor.">
+C1tumören
+Rhar vuxit och blivit
+C3flera centimeter stor
+Ptumören har vuxit och blivit flera centimeter stor
+<attr type="PositiveSentiment" span="flera centimeter stor">
+STvå personer låg och sov <där,> men <ingen av dem> skadades.
+<attr type="negation" literal="ingen av dem" token="ingen av dem">
+C2två personer
+Rlåg och sov
+PR<där>
+Rmen
+PR<ingen av dem>
+Rskadades
+Ptvå personer låg och sov där men ingen av dem skadades
+S <Vanligen> används ved eller elektricitet.
+PR<vanligen>
+Ranvänds
+C1ved
+Reller
+C1elektricitet
+Pvanligen används ved eller elektricitet
+S <Vi> vet, slutligen, att många yrkestitlar var vaga, mångtydiga och därmed inte så upplysande.
+<attr type="positivesentiment" literal="Vi" token="Vi">
+<attr type="negation" literal="inte så upplysande." token="inte så">
+PR<vi>
+Rvet
+Ratt
+C2många yrkestitlar
+Rvar
+C1vaga
+C1mångtydiga
+Roch
+C3inte så upplysande
+Pvi vet att många yrkestitlar var vaga mångtydiga och inte så upplysande
+<attr type="negation" span="och inte så upplysande">
+<attr type="PositiveSentiment" span="vi vet">
+SVid olympiska sommarspelen 1972 i München slog terrorister till.
+<attr type="time" literal="olympiska sommarspelen 1972" token="olympiska sommarspelen 1972">
+Rvid
+C3olympiska sommarspelen 1972
+Ri
+C1münchen
+Rslog
+C1terrorister
+Rtill
+Pvid olympiska sommarspelen 1972 i münchen slog terrorister till
+<attr type="time" span="vid olympiska sommarspelen 1972">
 Sde kommunikativa målen och diskursgemenskapen diskuteras och problematiseras inte i någon högre grad, vilket innebär att fokus tämligen snabbt hamnar på hur texterna ser ut.
 <attr type="negation" literal="diskuteras och problematiseras inte i" token="inte">
 <attr type="positivesentiment" literal="tämligen snabbt hamnar" token="tämligen snabbt">
@@ -613,6 +904,7 @@ Pjag tror att det är bra för det visar att vi agerar
 SBehandlingstid:
 C1behandlingstid
 S3-5 dygn.
+<attr type="time" literal="3-5 dygn." token="3-5 dygn.">
 C23-5 dygn
 S1. Från flexibilitet till bevarande
 C11.

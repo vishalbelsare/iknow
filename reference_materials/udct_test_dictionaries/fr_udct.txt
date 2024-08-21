@@ -18,6 +18,32 @@
 @déconseillent,UDNegSentiment
 @mauvais,UDNegSentiment
 
+@futur,UDTime
+@pied,UDUnit
+@pieds,UDUnit
+@trillion,UDNumber
+@trillions,UDNumber
+
+@nul,UDIgnoreNegation
+@rien,UDIgnoreNegation
+@guère,UDIgnoreNegation
+@aucun autre,UDIgnoreNegation
+
+@tout dµ abord,UDIgnoreTime
+@autrefois,UDIgnoreTime
+@seconde,UDIgnoreTime
+@noël,UDIgnoreTime
+@été,UDIgnoreTime
+@mars,UDIgnoreTime
+@an,UDIgnoreTime
+@2000,UDIgnoreTime
+@fois,UDIgnoreTime
+@depuis,UDIgnoreTime
+@g,UDIgnoreUnit
+@4g,UDIgnoreUnit
+@(30),UDIgnoreNumber
+@douzaine,UDIgnoreNumber
+
 Auteur,\end
 Ph.,\noend
 

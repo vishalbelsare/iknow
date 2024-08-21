@@ -24,7 +24,6 @@ cdef extern from "../../engine/src/engine.h" namespace "iknowdata" nogil:
 		Generic3 = 15
 
 cdef extern from "../../engine/src/engine.h" namespace "iknowdata::Entity" nogil:
-	const size_t kNoConcept = <size_t>(-1)
 	enum eType:
 		NonRelevant = 0,
 		Concept
@@ -43,6 +42,7 @@ cdef extern from "../../engine/src/engine.h" namespace "iknowdata::Sentence" nog
 	ctypedef vector[Sent_Attribute] Sent_Attributes
 	ctypedef vector[Entity_Ref] Path
 	ctypedef vector[Path_Attribute] Path_Attributes
+	ctypedef vector[CRC] CRCs
 
 cdef extern from "../../engine/src/engine.h" namespace "iknowdata::Text_Source" nogil:
 	ctypedef ProximityPairVector_t Proximity
@@ -69,11 +69,17 @@ cdef extern from "../../engine/src/engine.h" namespace "iknowdata" nogil:
 		unsigned short pos
 		unsigned short span
 
+	struct CRC:
+		string head "head_token"
+		string relation "relation_token"
+		string tail "tail_token"
+
 	struct Sentence:
 		Entities entities
 		Sent_Attributes sent_attributes
 		Path path
 		Path_Attributes path_attributes
+		CRCs crc_chains
 
 	struct Text_Source:
 		Sentences sentences

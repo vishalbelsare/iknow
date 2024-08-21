@@ -32,3 +32,28 @@ Behandlingstid,\end
 @besviken,UDNegSentiment
 @alltför,UDNegSentiment
 
+@redan,UDTime
+@graviditet,UDTime
+@graviditeten,UDTime
+@olympiska spelen,UDTime
+@olympiska sommarspelen,UDTime
+
+@föga,UDIgnoreNegation
+@aldrig tidigare,UDIgnoreNegation
+@sällan,UDIgnoreNegation
+@luciadag,UDIgnoreTime
+@luciadagen,UDIgnoreTime
+@1000,UDIgnoreTime
+@vanligen,UDIgnoreTime
+@vintertid,UDIgnoreTime
+@längre,UDIgnoreTime
+
+@jättemånga,UDNumber
+@böcker,UDUnit
+@jetonger,UDUnit
+
+@5g,UDIgnoreUnit
+@hundratal,UDIgnoreNumber
+@hundratals,UDIgnoreNumber
+@flera,UDIgnoreNumber
+@procent,UDIgnoreUnit

@@ -52,8 +52,7 @@ LIBRARYDIRFLAG = -L
 LIBRARYSEARCHFLAG = -l
 
 LFLAGS = $(PLATARCH) -Wl,-multiply_defined,suppress -Wl,-headerpad_max_install_names -stdlib=$(STDLIB)
-# Note that dylib's need a -install_name to be set
-LIBRARYFLAGSDYN = -dynamiclib -install_name @loader_path/$(@F)
+LIBRARYFLAGSDYN = -dynamiclib
 LIBRARYFLAGSSO = -dynamic -bundle
 
 LIBRARYFLAGS += $(LFLAGS) $(if $(IS_DYLIB), $(LIBRARYFLAGSDYN), $(LIBRARYFLAGSSO))
@@ -145,7 +144,7 @@ endif
 #Strict flags
 ifeq ($(STRICT),1)
 #"long long" is used in sysTypes.h
-OBJECTFLAGS += -Wno-long-long -Werror -Wall -Wextra -pedantic-errors -fdiagnostics-show-option -Wno-parentheses -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-local-typedef -Wno-unknown-warning-option -Wno-deprecated-copy
+OBJECTFLAGS += -Wno-long-long -Werror -Wall -Wextra -pedantic-errors -fdiagnostics-show-option -Wno-parentheses -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused-local-typedef -Wno-unknown-warning-option -Wno-deprecated-copy -Wno-unused-but-set-variable -Wno-deprecated-declarations -Wno-invalid-utf8
 #OBJECTFLAGS += -Wno-long-long -Werror -Wall -Wextra -pedantic-errors -fdiagnostics-show-option
 LIBRARYFLAGS +=  -Werror -Wall -Wextra -Werror
 EXECUTABLEFLAGS += -Werror -Wall -Wextra

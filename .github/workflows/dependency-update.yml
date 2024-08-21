@@ -1,21 +1,19 @@
-# Configuration for autoupdating dependencies.
+# Configuration for updating dependencies.
 #
-# Once a day, at midnight UTC, we check for updates to
+# Check for updates to
 # - ICU
-# - buildcache
+# - ccache for Windows
 # - Python for Windows
-# - Python for Mac OS X
+# - Python for macOS universal
 # - Cython
 # - manylinux
 #
 # For each dependency that has an update, we create a pull request containing a
 # single commit that updates the dependency.
 
-name: Dependency Autoupdate
+name: Dependency Update
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       BUILD_PULL_REQUEST:
@@ -28,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: search for update
         run: $GITHUB_WORKSPACE/actions/update_icu.py ${{ secrets.GITHUB_TOKEN }}
       - name: allow building pull requests
@@ -38,7 +36,7 @@ jobs:
         if: github.event_name != 'schedule' && github.event.inputs.BUILD_PULL_REQUEST == 'false'
         run: echo "ACTIONS_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
       - name: apply update
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v6
         with:
           assignees: isc-adang
           author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
@@ -62,7 +60,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: search for update
         run: $GITHUB_WORKSPACE/actions/update_json.py ${{ secrets.GITHUB_TOKEN }}
       - name: allow building pull requests
@@ -72,7 +70,7 @@ jobs:
         if: github.event_name != 'schedule' && github.event.inputs.BUILD_PULL_REQUEST == 'false'
         run: echo "ACTIONS_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
       - name: apply update
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v6
         with:
           assignees: isc-adang
           author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
@@ -92,13 +90,15 @@ jobs:
 
             *I am a bot, and this action was performed automatically.*
 
-  autoupdate-buildcache:
+  autoupdate-ccache:
     runs-on: ubuntu-latest
     steps:
       - name: check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+      - name: install Python packages
+        run: pip3 install --user beautifulsoup4
       - name: search for update
-        run: $GITHUB_WORKSPACE/actions/update_buildcache.py ${{ secrets.GITHUB_TOKEN }}
+        run: $GITHUB_WORKSPACE/actions/update_ccache.py ${{ secrets.GITHUB_TOKEN }}
       - name: allow building pull requests
         if: github.event_name == 'schedule' || github.event.inputs.BUILD_PULL_REQUEST == 'true'
         run: echo "ACTIONS_TOKEN=${{ secrets.ACTIONS_TOKEN }}" >> $GITHUB_ENV
@@ -106,19 +106,23 @@ jobs:
         if: github.event_name != 'schedule' && github.event.inputs.BUILD_PULL_REQUEST == 'false'
         run: echo "ACTIONS_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
       - name: apply update
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v6
         with:
           assignees: isc-adang
           author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-          commit-message: "[autoupdate-buildcache] update buildcache from \"${{ env.BUILDCACHE_NAME_OLD }}\" to \"${{ env.BUILDCACHE_NAME_LATEST }}\""
-          branch: autoupdate-buildcache
+          commit-message: "[autoupdate-ccache] update ccache from ${{ env.CCACHE_VERSION_OLD }} to ${{ env.CCACHE_VERSION }}"
+          branch: autoupdate-ccache
           delete-branch: true
           token: ${{ env.ACTIONS_TOKEN }}
-          title: "[autoupdate] Update buildcache from \"${{ env.BUILDCACHE_NAME_OLD }}\" to \"${{ env.BUILDCACHE_NAME_LATEST }}\""
+          title: "[autoupdate] Update ccache from ${{ env.CCACHE_VERSION_OLD }} to ${{ env.CCACHE_VERSION }}"
           body: |-
-            As of ${{ env.BUILDCACHE_PUBLISHED_AT }}, a new version of buildcache has been released.
+            As of ${{ env.CCACHE_PUBLISHED_AT }}, a new version of ccache for Windows has been released.
 
-            For details of the release, see ${{ env.BUILDCACHE_HTML_URL }}.
+            Changelog (sourced from ${{ env.CCACHE_CHANGELOG_URL }})
+            <blockquote>
+
+            ${{ env.CCACHE_CHANGELOG }}
+            </blockquote>
 
             *I am a bot, and this action was performed automatically.*
 
@@ -126,7 +130,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: install Python packages
         run: pip3 install --user requests beautifulsoup4
       - name: search for update
@@ -138,7 +142,7 @@ jobs:
         if: github.event_name != 'schedule' && github.event.inputs.BUILD_PULL_REQUEST == 'false'
         run: echo "ACTIONS_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
       - name: apply update
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v6
         with:
           assignees: isc-adang
           author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
@@ -158,45 +162,11 @@ jobs:
 
             *I am a bot, and this action was performed automatically.*
 
-  autoupdate-manylinux:
-    runs-on: ubuntu-latest
-    steps:
-      - name: check out repository
-        uses: actions/checkout@v2
-      - name: install Python packages
-        run: pip3 install --user requests
-      - name: search for update
-        run: $GITHUB_WORKSPACE/actions/update_manylinux.py
-      - name: allow building pull requests
-        if: github.event_name == 'schedule' || github.event.inputs.BUILD_PULL_REQUEST == 'true'
-        run: echo "ACTIONS_TOKEN=${{ secrets.ACTIONS_TOKEN }}" >> $GITHUB_ENV
-      - name: prevent building pull requests
-        if: github.event_name != 'schedule' && github.event.inputs.BUILD_PULL_REQUEST == 'false'
-        run: echo "ACTIONS_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-      - name: apply update
-        uses: peter-evans/create-pull-request@v3
-        with:
-          assignees: isc-adang
-          author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-          commit-message: "[autoupdate-manylinux] update manylinux: ${{ env.MANYLINUX_UPDATE_INFO_ONELINE }}"
-          branch: autoupdate-manylinux
-          delete-branch: true
-          token: ${{ env.ACTIONS_TOKEN }}
-          title: "[autoupdate] Update manylinux: ${{ env.MANYLINUX_UPDATE_INFO_ONELINE }}"
-          body: |-
-            A new manylinux image is available.
-
-            ${{ env.MANYLINUX_UPDATE_INFO_MULTILINE }}
-
-            For details regarding manylinux images, see https://github.com/pypa/manylinux.
-
-            *I am a bot, and this action was performed automatically.*
-
   autoupdate-python-windows:
     runs-on: ubuntu-latest
     steps:
       - name: check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: search for update
         run: $GITHUB_WORKSPACE/actions/update_python.py win64
       - name: allow building pull requests
@@ -206,7 +176,7 @@ jobs:
         if: github.event_name != 'schedule' && github.event.inputs.BUILD_PULL_REQUEST == 'false'
         run: echo "ACTIONS_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
       - name: apply update
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v6
         with:
           assignees: isc-adang
           author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
@@ -224,13 +194,15 @@ jobs:
 
             *I am a bot, and this action was performed automatically.*
 
-  autoupdate-python-osx:
-    runs-on: macos-10.15
+  autoupdate-python-macosuniversal:
+    runs-on: ubuntu-latest
     steps:
       - name: check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: search for update
-        run: /usr/bin/python3 $GITHUB_WORKSPACE/actions/update_python.py osx
+        run: |
+          pip3 install beautifulsoup4
+          $GITHUB_WORKSPACE/actions/update_python.py macos
       - name: allow building pull requests
         if: github.event_name == 'schedule' || github.event.inputs.BUILD_PULL_REQUEST == 'true'
         run: echo "ACTIONS_TOKEN=${{ secrets.ACTIONS_TOKEN }}" >> $GITHUB_ENV
@@ -238,20 +210,54 @@ jobs:
         if: github.event_name != 'schedule' && github.event.inputs.BUILD_PULL_REQUEST == 'false'
         run: echo "ACTIONS_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
       - name: apply update
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v6
         with:
           assignees: isc-adang
           author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-          commit-message: "[autoupdate-python-osx] update Python for Mac OS X: ${{ env.PYTHON_UPDATE_INFO_ONELINE }}"
-          branch: autoupdate-python-osx
+          commit-message: "[autoupdate-python-macosuniversal] update Python for macOS universal: ${{ env.PYTHON_UPDATE_INFO_ONELINE }}"
+          branch: autoupdate-python-macosuniversal
           delete-branch: true
           token: ${{ env.ACTIONS_TOKEN }}
-          title: "[autoupdate] Update Python for Mac OS X: ${{ env.PYTHON_UPDATE_INFO_ONELINE }}"
+          title: "[autoupdate] Update Python for macOS universal: ${{ env.PYTHON_UPDATE_INFO_ONELINE }}"
           body: |-
-            A new version of Python for Mac OS X is available.
+            A new version of Python for macOS universal is available.
 
             ${{ env.PYTHON_UPDATE_INFO_MULTILINE }}
 
-            For details of the updated versions, see https://github.com/pyenv/pyenv/releases/v${{ env.PYENV_TOOL_VERSION }}.
+            For details of all Python releases, see https://www.python.org/downloads/macos/.
+
+            *I am a bot, and this action was performed automatically.*
+
+  autoupdate-manylinux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out repository
+        uses: actions/checkout@v4
+      - name: install Python packages
+        run: pip3 install --user requests
+      - name: search for update
+        run: $GITHUB_WORKSPACE/actions/update_manylinux.py
+      - name: allow building pull requests
+        if: github.event_name == 'schedule' || github.event.inputs.BUILD_PULL_REQUEST == 'true'
+        run: echo "ACTIONS_TOKEN=${{ secrets.ACTIONS_TOKEN }}" >> $GITHUB_ENV
+      - name: prevent building pull requests
+        if: github.event_name != 'schedule' && github.event.inputs.BUILD_PULL_REQUEST == 'false'
+        run: echo "ACTIONS_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+      - name: apply update
+        uses: peter-evans/create-pull-request@v6
+        with:
+          assignees: isc-adang
+          author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          commit-message: "[autoupdate-manylinux] update manylinux: ${{ env.MANYLINUX_UPDATE_INFO_ONELINE }}"
+          branch: autoupdate-manylinux
+          delete-branch: true
+          token: ${{ env.ACTIONS_TOKEN }}
+          title: "[autoupdate] Update manylinux: ${{ env.MANYLINUX_UPDATE_INFO_ONELINE }}"
+          body: |-
+            A new manylinux image is available.
+
+            ${{ env.MANYLINUX_UPDATE_INFO_MULTILINE }}
+
+            For details regarding manylinux images, see https://github.com/pypa/manylinux.
 
             *I am a bot, and this action was performed automatically.*

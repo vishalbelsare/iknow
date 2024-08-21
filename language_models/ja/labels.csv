@@ -8,6 +8,7 @@
 ;5,7,10,13,17,20,$;JPPunctuation;typeEndConcept;mandatory label;0;;
 ;5,20,$;JPRelation;typeRelation;mandatory label;0;;
 ;5,10,13,20,$;JPNonRelevant;typeOther;for CRC-detection in testframework;0;;
+;3;JPCapitalAll;typeAttribute;non-mandatory label for Japanese;0;;
 
 ;5,10,13,$;JPBeginConcept;typeBeginConcept;do not merge with previous Concept;0;;
 ;5,$;JPBeginEndConcept;typeBeginEndConcept;do not merge with other Concepts;0;;
@@ -20,7 +21,7 @@
 ;5,17,20,$;JPNegation;typeAttribute;to mark certain entities as negation;0;;Entity(Negation)
 ;$;JPDateTime;typeAttribute;time indication;0;;Entity(DateTime)
 ;$;JPFreq;typeAttribute;frequency indication;0;;Entity(Frequency)
-;$;JPDuration;typeAttribute;;0;;Entity(Duration)
+;5,$;JPDuration;typeAttribute;;0;;Entity(Duration)
 
 /* Attributes for Entity Vectors
 ;5,13,$;PrimaryRelation;typeAttribute;primary predicate of the sentence;0;;EVSlot(0,0,Topic,L,B)|EVSlot(0,1,Subject,L,B)|EVSlot(0,2,Object,L,B)
@@ -28,13 +29,14 @@
 ;5,10,13,$;Object;typeAttribute;object of a verb;0;;EVValue(0,2,Object,L,B)
 ;5,13,$;AndOr;typeAttribute;and/or;0;;
 ;5,13,$;Predicate;typeAttribute;predicate of the clause;0;;EVSlot(0,1,Subject,L,B)|EVSlot(0,2,Object,L,B)
-;10,13,15,$;DateTime;typeAttribute;Concept that indicates date or time;0;;EVValue(0,3,Time,R,B)
+;3,10,13,15,$;DateTime;typeAttribute;Concept that indicates date or time;0;;EVValue(0,3,Time,R,B)
 ;5,10,13,$;Topic;typeAttribute;topic of the sentenc;0;;EVValue(0,0,Topic,L,B)
 ;13,$;OtherEntity;typeAttribute;Concpet that is not Subject, Object, or Topic;0;;EVValue(0,4,Other,L,B)
 
 /* Interim Attributes
 ;7,13,$;Dummy;typeAttribute;;0;;
 ;5;Dummy2;typeAttribute;;0;;
+;3,5,10;Dummy3;typeAttribute;added phase 5 - #75-mno, added phase 3 - #76-mno;0;;
 ;5,$;JPIgnore;typeOther;Temporary *EXPERIMENTAL* label for 思わず;0;;
 ;5;JPRule4510;typeAttribute;exceptions for Rule #4510;0;;
 ;5;JPJoinDate;typeAttribute;exceptions for Rule #4495;0;;
@@ -43,6 +45,7 @@
 ;5;JPRule172a;typeAttribute;exceptions for Rule #172;0;;
 ;5;JPRule172b;typeAttribute;exceptions for Rule #172;0;;
 ;5;JPRule172c;typeAttribute;exceptions for Rule #172;0;;
+;5;JPRule5;typeAttribute;;0;;
 ;5,$;JPPolite;typeAttribute;words in polite form;0;;
 ;5,$;JPSahen;typeAttribute;SuruNoun to be kept as label in verbs;0;;
 
@@ -83,12 +86,13 @@
 ;5,10,$;JPPerson;typeConcept;Label for a Person's Name;0;;
 ;5,10,$;JPSuffixNoun;typeConcept;label for word that can be a noun suffix or something else;0;;
 ;5,10,$;JPSuffixPerson;typeConcept;Label for word that follows a person's name or something else;0;;
-;5,$;JPSeparateDate;typeBeginEndConcept;label for date to be a concept by itself;0;;
+;5,19,$;JPSeparateDate;typeBeginEndConcept;label for date to be a concept by itself;0;;
 ;3,5,$;JPYearNum;typeConcept;Number that indicates Year;0;;
 ;3,5,$;JPMonthNum;typeConcept;Number that indicates Month;0;;
 ;3,5,$;JPDateNum;typeConcept;Number that indicates Date;0;;
-;5,$;JPTimeNum;typeConcept;Number that indicates Time;0;;
-;5,$;JPYobi;typeOther;Day of the week;0;;
+;5,$;JPImperialYear;typeConcept;- #75-mno;0;;
+;3,5,$;JPTimeNum;typeConcept;Number that indicates Time, added phase 3 - #75-mno;0;;
+;5,19,$;JPYobi;typeOther;Day of the week, added phase 19 - #75-mno;0;;
 ;5,$;JPSeason;typeAttribute;season;0;;
 ;3;JPOne;typeAttribute;"1 year", "1 day";0;;
 ;2,3,5,10,13,19,$;JPNumber;typeConcept;label for numbers;0;;
@@ -96,11 +100,12 @@
 ;5,$;JPSuffixNum;typeAttribute;Counting word for non-Measurement;0;;
 ;3,$;JPListNumber;typeOther;Label for ①②③, etc.;0;;
 ;3,5,10,$;JPTime;typeConcept;label for time-related words;0;;
-;5,10,13,$;JPDate;typeConcept;label for date-related word 日;0;;
+;5,10,13,19,$;JPDate;typeConcept;label for date-related word 日, added phase 19 - #75-mno;0;;
 ;3,5,10,$;JPCount;typeConcept;label for counting words;0;;
 ;5,10,$;JPFraction;typeConcept;label for fractions;0;;
 ;5,$;JPFrequency;typeConcept;Label for frequencies;0;;
 ;5,$;JPimperialEra;typeConcept;Imperial Era Names;0;;
+;3,5,$;JPTestNoUnit;typeConcept;label for ph, be, lac, etc.;0;;
 
 /* Flavors of Adjectives
 ;5,10,$;JPAdjNoun;typeConcept;label for adjectival nouns;0;;
@@ -108,6 +113,7 @@
 ;5,10,$;JPAdjNounTARI;typeConcept;label for Adjectival Noun TARI;0;;
 ;3,5,10,13,$;JPAttributive;typeConcept;label for attributive;0;;
 ;5,10,$;JPAttributiveNeg;typeConcept;label for negating attributive;0;;
+;5,10,$;JPAttributiveTime;typeAttribute;;0;;
 ;5,10,$;JPAdjVStem;typeConcept;label for adjectival verb stem ;0;;
 ;5,7,10,13,17,$;JPAdjVBase;typeConcept;label for Adjectival Verb Predicative/Attributive Form;0;;
 ;5,10,$;JPAdjVCond;typeRelation;label for Adjectival Verb Conditional Form;0;;
@@ -132,7 +138,7 @@
 ;5,$;JPVerbOtherRU;typeAttribute;VerbOther of Verbs whose whose Base Form ends with る;0;;
 ;5,$;JPVerbPassive;typeAttribute;Verbs in passiver form;0;;
 ;5,7,10,13,$;JPLinkV;typeRelation;label for Linking Verbs such as だ, です, etc.;0;;
-;5,7,10,13,$;JPVerb;typeRelation;label for verbs;0;;
+;5,7,10,13,17,$;JPVerb;typeRelation;label for verbs;0;;
 ;5,10,$;JPConjVerb;typeRelation;label for Verbs in Conjunctive Form followed by a Conjunction;0;;
 ;3,5,10,$;JPSuruVerb;typeRelation;label for する verbs;0;;
 ;5,10,$;JPSuffixSuruNoun;typeConcept;label for noun-forming suffix that can also act as a Suru verb;0;;
@@ -391,6 +397,7 @@
 ;3,5,10,13,$;BracketClose;typeOther;label for closing bracket;0;;
 ;5,10,$;DotDotDot;typeOther;label for "…";0;;
 ;3,5,10,13,$;JPPlusMinus;typeConcept;"+" and "-";0;;
+;10;JPMinus;typeOther;"-";0;;
 
 
 ;1,3,5,$;JPMeasurement;typeAttribute;general attribute fo all measurements;0;;Entity(Measurement)
@@ -398,3 +405,15 @@
 ;1,5,$;JPMeasurementStop;typeAttribute;enables path expansion;0;;Path(End,Measurement)
 ;1,3,5,10,19,$;JPValue;typeAttribute;property for Measurement - value;0;;Entity(Measurement,Value)
 ;1,5,19,$;JPUnit;typeAttribute;property for Measurement - unit;0;;Entity(Measurement,Unit)
+
+;3,$;JPUnitCapital;typeAttribute;can be capital letter;0;;
+;3,$;JPUnitFirst;typeAttribute;;0;;
+;3,$;JPCapitalPrefix;typeAttribute;;0;;
+
+
+;3,$;JPHour;typeAttribute;Time - Hour numbers;0;;
+;3,$;JPMinute;typeAttribute;Time - Minute numbers;0;;
+;3,$;JPSecond;typeAttribute;Time - Second numbers;0;;
+
+
+;5,$;JPno_join_Con;typeAttribute; - 08182022;0;;
